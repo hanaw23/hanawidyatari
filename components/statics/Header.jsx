@@ -1,15 +1,14 @@
-import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
 import LightIcon from "../svg/LightIcon";
 import DarkIcon from "../svg/DarkIcon";
 import DetailHover from "../hovers/DetailHover";
-import TriangleIcon from "../svg/TriangleIcon";
 
 export default function Header() {
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [isHover, setIsHover] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -22,15 +21,31 @@ export default function Header() {
 
     if (currentTheme === "dark") {
       return (
-        <div className="flex flex-col px-2">
-          <LightIcon role="button" onClick={() => setTheme("light")} height={20} width={20} className="fill-gray-50" />
-        </div>
+        <>
+          <DetailHover
+            icon={
+              <div className="flex flex-col px-2">
+                <LightIcon role="button" onClick={() => setTheme("light")} height={20} width={20} className="fill-gray-50" hover={() => setIsHover(true)} leave={() => setIsHover(!isHover)} />
+              </div>
+            }
+            detail="Light"
+            onHover={isHover}
+          />
+        </>
       );
     } else {
       return (
-        <div>
-          <DarkIcon role="button" onClick={() => setTheme("dark")} height={20} width={20} />
-        </div>
+        <>
+          <DetailHover
+            icon={
+              <div className="flex flex-col px-2">
+                <DarkIcon role="button" onClick={() => setTheme("dark")} height={20} width={20} className="fill-gray-800" hover={() => setIsHover(true)} leave={() => setIsHover(!isHover)} />
+              </div>
+            }
+            detail="Dark"
+            onHover={isHover}
+          />
+        </>
       );
     }
   };

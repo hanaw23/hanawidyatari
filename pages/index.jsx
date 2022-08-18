@@ -14,7 +14,9 @@ export default function Home() {
       <Header />
 
       <p className="dark:text-white">Hallo Everything, Im Hana</p>
+
       <AboutMe />
+
       <TechnicalFeatures />
     </div>
   );
