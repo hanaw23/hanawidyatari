@@ -4,8 +4,9 @@ import { useTheme } from "next-themes";
 import LightIcon from "../svg/LightIcon";
 import DarkIcon from "../svg/DarkIcon";
 import DetailHover from "../hovers/DetailHover";
+import { navbar } from "../../utility/navBarList";
 
-export default function Header() {
+export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [isHover, setIsHover] = useState(false);
@@ -51,7 +52,7 @@ export default function Header() {
   };
 
   return (
-    <div className="bg-[#7C96BF] dark:bg-transparent w-screen h-16 flex justify-around py-4">
+    <div className="bg-[#a934dc] dark:bg-[#0e0e0e] w-screen h-18 flex justify-around py-6 active fixed">
       <div className="flex gap-2">
         <div className="flex">
           <h1 className="font-bold text-lg">Hana</h1>
@@ -61,13 +62,14 @@ export default function Header() {
           🤖
         </span>
       </div>
-      <div className="ml-40">
-        <ul className="flex gap-10 text-sm">
-          <li className="cursor-pointer">About Me</li>
-          <li>Technical Features</li>
-          <li>Experiences</li>
-          <li>Contact Me</li>
-        </ul>
+      <div className="ml-40 flex gap-10">
+        {navbar.map((item, i) => {
+          return (
+            <ul className=" text-sm" key={i}>
+              <li className="cursor-pointer">{item.name}</li>
+            </ul>
+          );
+        })}
       </div>
       {renderThemeChanger()}
     </div>

@@ -1,8 +1,8 @@
 export default function AboutMe() {
   return (
-    <div className="h-screen bg-gradient-to-b from-indigo-600">
+    <div className="h-screen ">
       <div className="flex justify-center">
-        <h1 className="mt-20 text-[40px] font-semibold">About Me</h1>
+        <h1 className="mt-10 text-[40px] font-semibold">About Me</h1>
       </div>
       <div className="w-[550px] mt-20 text-justify mx-auto">
         <p>
@@ -14,7 +14,7 @@ export default function AboutMe() {
       </div>
 
       <div className="ml-[480px] mt-20">
-        <button className="border border-transparent rounded-[20px] bg-gray-50 text-gray-900 px-3 py-1" onClick={() => (location.href = "HanaWidyatari_Web-Dev.pdf")}>
+        <button className="border border-transparent rounded-[20px] bg-gray-50 text-gray-900 px-3 py-1" onClick={() => (location.href = "assets/documents/HanaWidyatari_Web-Dev.pdf")}>
           CV & Portfolio
         </button>
       </div>
