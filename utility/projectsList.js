@@ -8,6 +8,11 @@ import AxiosIcon from "../components/svg/projectIcons/AxiosIcon";
 import VercelIcon from "../components/svg/projectIcons/VercelIcon";
 import NodeIcon from "../components/svg/projectIcons/NodeIcon";
 import PostgreIcon from "../components/svg/projectIcons/PostgreIcon";
+import ExpressIcon from "../components/svg/projectIcons/ExpressIcon";
+import SwaggerIcon from "../components/svg/projectIcons/SwaggerIcon";
+import PostmanIcon from "../components/svg/projectIcons/PostmanIcon";
+import GitlabIcon from "../components/svg/projectIcons/GitLabIcon";
+import GitIcon from "../components/svg/projectIcons/Git";
 
 export const projects = [
   {
@@ -74,7 +79,7 @@ export const projects = [
         id: 6,
         iconHtml: (
           <div>
-            <AxiosIcon height={30} width={30} className="cursor-pointer" />
+            <AxiosIcon height={35} width={35} className="cursor-pointer" />
           </div>
         ),
       },
@@ -98,10 +103,11 @@ export const projects = [
         id: 9,
         iconHtml: (
           <div>
-            <VercelIcon height={30} width={30} fill="#0e0e0e" className="cursor-pointer" />
+            <ExpressIcon height={35} width={35} />
           </div>
         ),
       },
+
       {
         id: 10,
         iconHtml: (
@@ -114,7 +120,39 @@ export const projects = [
         id: 11,
         iconHtml: (
           <div>
-            <PostgreIcon height={30} width={30} className="cursor-pointer" />
+            <SwaggerIcon height={30} width={30} className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 12,
+        iconHtml: (
+          <div>
+            <PostmanIcon height={30} width={30} className="cursor-pointer" fill="#f97316" />
+          </div>
+        ),
+      },
+      {
+        id: 13,
+        iconHtml: (
+          <div>
+            <GitlabIcon height={30} width={30} className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 14,
+        iconHtml: (
+          <div>
+            <GitIcon height={30} width={30} className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 15,
+        iconHtml: (
+          <div>
+            <VercelIcon height={30} width={30} fill="#0e0e0e" className="cursor-pointer" />
           </div>
         ),
       },
