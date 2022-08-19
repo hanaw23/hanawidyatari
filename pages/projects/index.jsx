@@ -47,13 +47,20 @@ export default function Projects() {
                       );
                     })}
                   </div>
-                  <div className="mt-5">
-                    <h3 className="text-m font-semibold mb-3 text-[#a934dc]">Description</h3>
+                  <div className="mt-4">
+                    <h3 className="text-m font-semibold mb-2 text-[#a934dc]">Description</h3>
                     <p className="text-justify text-sm">{item.desc}</p>
                   </div>
-                  <div className="mt-8">
-                    <h3 className="text-m font-semibold mb-5 text-[#a934dc]">Technology</h3>
-                    <div className="flex gap-1">
+                  <div className="mt-4">
+                    <h3 className="text-m font-semibold mb-2 text-[#a934dc]">Link Project</h3>
+                    <a href={item.link} target="_blank">
+                      {item.link}
+                    </a>
+                  </div>
+                  <div className="mt-4">
+                    <h3 className="text-m font-semibold mb-4 text-[#a934dc]">Technology</h3>
+
+                    <div className="grid grid-cols-10 gap-x-1 gap-y-3 w-[550px]">
                       {item.icons?.map((icon, i) => {
                         return <div key={i}>{icon.iconHtml}</div>;
                       })}

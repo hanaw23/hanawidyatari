@@ -23,7 +23,7 @@ export default function NextIcon(props) {
       detail="NextJs"
       onHover={isHover}
       classNameDiv="flex flex-col w-[50px] h-[50px]"
-      classNameDetail="w-fit -mt-3 ml-[15px]"
+      classNameDetail="w-fit -mt-3 ml-[13px]"
     />
   );
 }

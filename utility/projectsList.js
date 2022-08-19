@@ -7,6 +7,7 @@ import ReduxIcon from "../components/svg/projectIcons/ReduxIcon";
 import AxiosIcon from "../components/svg/projectIcons/AxiosIcon";
 import VercelIcon from "../components/svg/projectIcons/VercelIcon";
 import NodeIcon from "../components/svg/projectIcons/NodeIcon";
+import PostgreIcon from "../components/svg/projectIcons/PostgreIcon";
 
 export const projects = [
   {
@@ -98,6 +99,22 @@ export const projects = [
         iconHtml: (
           <div>
             <VercelIcon height={30} width={30} fill="#0e0e0e" className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 10,
+        iconHtml: (
+          <div>
+            <PostgreIcon height={30} width={30} className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 11,
+        iconHtml: (
+          <div>
+            <PostgreIcon height={30} width={30} className="cursor-pointer" />
           </div>
         ),
       },
