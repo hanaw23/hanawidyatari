@@ -1,20 +1,13 @@
 import { useState } from "react";
 import { projects } from "../../utility/projectsList";
 
-import DetailHover from "../../components/hovers/DetailHover";
-
 export default function Projects() {
   const [showDetail, setShowDetail] = useState(false);
   const [idDetail, setIdDetail] = useState("");
-  const [isHover, setIsHover] = useState(false);
 
   const handleShowDetailProject = (id) => {
     setShowDetail(true);
     setIdDetail(`${id}`);
-  };
-
-  const handleHoverIconDetail = () => {
-    setIsHover(true);
   };
 
   return (
@@ -51,15 +44,18 @@ export default function Projects() {
                     <h3 className="text-m font-semibold mb-2 text-[#a934dc]">Description</h3>
                     <p className="text-justify text-sm">{item.desc}</p>
                   </div>
-                  <div className="mt-4">
-                    <h3 className="text-m font-semibold mb-2 text-[#a934dc]">Link Project</h3>
-                    <a href={item.link} target="_blank">
-                      {item.link}
-                    </a>
-                  </div>
+
+                  {!item.link ? null : (
+                    <div className="mt-4">
+                      <h3 className="text-m font-semibold mb-2 text-[#a934dc]">Link Project</h3>
+                      <a href={item.link} target="_blank">
+                        {item.link}
+                      </a>
+                    </div>
+                  )}
+
                   <div className="mt-4">
                     <h3 className="text-m font-semibold mb-4 text-[#a934dc]">Technology</h3>
-
                     <div className="grid grid-cols-10 gap-x-1 gap-y-3 w-[550px]">
                       {item.icons?.map((icon, i) => {
                         return <div key={i}>{icon.iconHtml}</div>;

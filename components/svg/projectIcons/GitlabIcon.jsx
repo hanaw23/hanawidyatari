@@ -26,10 +26,10 @@ export default function GitlabIcon(props) {
           <path d="m241.193935 91.1045486h-66.015085l28.370895-87.31428574c1.4592-4.49340953 7.815314-4.49219048 9.274514 0z" fill="#e24329" />
         </svg>
       }
-      detail="Git"
+      detail="Gitlab"
       onHover={isHover}
       classNameDiv="flex flex-col w-[50px] h-[50px]"
-      classNameDetail="w-fit -mt-3 ml-[7px]"
+      classNameDetail="w-fit -mt-3 ml-[10px]"
     />
   );
 }

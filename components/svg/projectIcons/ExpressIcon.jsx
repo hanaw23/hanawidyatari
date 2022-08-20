@@ -18,7 +18,7 @@ export default function ExpressIcon(props) {
         <svg
           viewBox="0 0 128 128"
           xmlns="http://www.w3.org/2000/svg"
-          className="dark:fill-gray-50 fill-black cursor-pointer"
+          className="dark:fill-gray-50 fill-[#0e0e0e]cursor-pointer"
           width={props.width}
           height={props.height}
           fill={props.fill}
