@@ -68,7 +68,9 @@ export default function Navbar() {
         {navbar.map((item, i) => {
           return (
             <ul className=" text-sm" key={i}>
-              <li className="cursor-pointer">{item.name}</li>
+              <li className="cursor-pointer">
+                <a href={item.link}>{item.name}</a>
+              </li>
             </ul>
           );
         })}

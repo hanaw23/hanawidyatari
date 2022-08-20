@@ -2,21 +2,21 @@ export const navbar = [
   {
     id: 1,
     name: "About Me",
-    link: "/aboutMe",
+    link: "#aboutMe",
   },
   {
     id: 2,
     name: "Experiences",
-    link: "/expereinces",
+    link: "#experiences",
   },
   {
     id: 3,
     name: "Projects",
-    link: "/projects",
+    link: "#projects",
   },
   {
     id: 4,
     name: "Contact Me",
-    link: "/contactMe",
+    link: "#contactMe",
   },
 ];

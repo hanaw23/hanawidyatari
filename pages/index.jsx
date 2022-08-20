@@ -23,13 +23,21 @@ export default function Home() {
         </div>
       </div>
 
-      <AboutMe />
+      <section id="aboutMe">
+        <AboutMe />
+      </section>
 
-      <Experiences />
+      <section id="experiences">
+        <Experiences />
+      </section>
 
-      <Projects />
+      <section id="projects">
+        <Projects />
+      </section>
 
-      <ContactMe />
+      <section id="contactMe">
+        <ContactMe />
+      </section>
     </>
   );
 }
