@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { projects } from "../../utility/projectsList";
+import ProjectDetailModal from "../../components/modals/ProjectDetailModal";
 
 export default function Projects() {
   const [showDetail, setShowDetail] = useState(false);
@@ -18,17 +19,17 @@ export default function Projects() {
 
       {projects.map((item, i) => {
         return (
-          <div className="flex justify-between" key={i}>
-            <div role="button" onClick={() => handleShowDetailProject(item.id)}>
-              <div className="flex flex-col gap-10 mx-20 mt-20">
-                <div className={`${showDetail && idDetail === `${item.id}` ? "bg-[#a934dc]" : "bg-transparent"} cursor-pointer border border-transparent hover:bg-[#a934dc] w-[350px] px-2 py-4 rounded-[5px]`}>
+          <div className="flex justify-between  border border-white" key={i}>
+            <div role="button" onClick={() => handleShowDetailProject(item.id)} className="border border-white">
+              <div className="grid grid-rows-5 gap-4 mx-20 mt-20 ">
+                <div className={`${showDetail && idDetail === `${item.id}` ? "bg-[#a934dc]" : "bg-transparent"} cursor-pointer border border-transparent hover:bg-[#a934dc] w-[350px] px-2 py-4 rounded-[5px] `}>
                   <div>{item.name}</div>
                 </div>
               </div>
             </div>
 
             {idDetail === `${item.id}` ? (
-              <div className={`${showDetail ? " flex" : "hidden"} mr-[100px] w-[850px]  px-3 py-3 mt-10`}>
+              <div className={`${showDetail ? " flex" : "hidden"} mr-[100px] w-[850px]  px-3 py-3 mt-10 mb- border border-white`}>
                 <div>
                   <h2 className="text-center text-[25px] font-semibold text-[#a934dc]">{item.name}</h2>
                   <div className="flex justify-center gap-3">
@@ -64,7 +65,8 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-            ) : null}
+            ) : // <ProjectDetailModal className={`${showDetail ? " flex" : "hidden"} mr-[100px] w-[850px]  px-3 py-3 mt-10 mb- border border-white`} name={item.name} icons={item.icons} desc={item.desc} link={item.link} pics={item.pics} />
+            null}
           </div>
         );
       })}
