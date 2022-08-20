@@ -54,7 +54,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="bg-[#a934dc] dark:bg-[#0e0e0e] w-screen h-18 flex justify-around py-6 active fixed">
+    <div className="bg-[#a934dc] dark:bg-[#0e0e0e] w-screen h-[58px] flex justify-around py-4 active fixed">
       <div className="flex gap-2">
         <div className="flex">
           <h1 className="font-bold text-lg">Hana</h1>
