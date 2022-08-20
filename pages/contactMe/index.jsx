@@ -1,13 +1,14 @@
 import { contacts } from "../../utility/contactsList";
+import Footer from "../../components/statics/Footer";
 
 export default function index() {
   return (
-    <div className="h-fit bg-[#a934dc] z-20 pb-16">
+    <div className="h-fit bg-[#a934dc] z-20 pb-20 ">
       <div className="py-5">
-        <h1 className="mt-8 text-[40px] font-semibold mx-20">Get In Touch With Me</h1>
+        <h1 className="mt-8 text-[45px] font-semibold mx-[315px]">Get In Touch With Me</h1>
       </div>
 
-      <div className="flex justify-between mt-10 mx-20">
+      <div className="flex gap-20 mt-10 justify-center">
         <div>
           <h3 className=" font-semibold text-[30px] w-[400px]">I am looking forward to start projects with you</h3>
           <p className="mt-8 w-[380px]">Email me if you interested to hire me on your project. I would be happy to join with your team.</p>
@@ -18,8 +19,8 @@ export default function index() {
           </button>
         </div>
 
-        <div>
-          <div className=" -mt-16 ml-[150px]">
+        <div className="mb-5">
+          <div className=" -mt-12 ml-[150px]">
             <h4 className="text-[20px]">PHONE CALL</h4>
             <ul className="mt-3">
               {contacts.map((contact, i) => {
@@ -27,7 +28,7 @@ export default function index() {
                   <div key={i}>
                     {contact.calls.map((call, i) => {
                       return (
-                        <li key={i}>
+                        <li key={i} className="mb-2">
                           <p className="text-sm">{call.phones}</p>
                         </li>
                       );
@@ -55,6 +56,8 @@ export default function index() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

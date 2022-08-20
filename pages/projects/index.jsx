@@ -12,7 +12,7 @@ export default function Projects() {
   };
 
   return (
-    <div className="h-fit py-10 mt-10 mb-24">
+    <div className="h-fit py-10 mt-10 mb-20">
       <div className="flex justify-center">
         <h1 className="mt-10 text-[40px] mb-8 font-semibold">Projects</h1>
       </div>
@@ -34,7 +34,7 @@ export default function Projects() {
 
                 <div>
                   {idDetail === `${item.id}` && showDetail ? (
-                    <ProjectDetailModal className="mr-[100px] w-[850px] h-[600px] z-10 px-3 -mt-[1135px] ml-[550px]" name={item.name} pics={item.pics} desc={item.desc} link={item.link} icons={item.icons} />
+                    <ProjectDetailModal className="mr-[100px] w-[850px] h-[600px] z-10 px-3 -mt-[1165px] ml-[550px]" name={item.name} pics={item.pics} desc={item.desc} link={item.link} icons={item.icons} />
                   ) : null}
                 </div>
               </div>

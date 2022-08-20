@@ -1,9 +1,7 @@
 export default function LinkedinIcon(props) {
   return (
-    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" className={props.className} height={props.height} width={props.width}>
-      <circle cx="142" cy="138" r="37" />
-      <path d="m244 194v198m-102-198v198" stroke="#fff" stroke-width="66" />
-      <path d="m276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66v-113c0-61-32-89-76-89-34 0-51 19-59 32" />
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" className={props.className} height={props.height} width={props.width}>
+      <path d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zM7.65 13.979H5.706V7.723H7.65v6.256zm-.984-7.024c-.614 0-1.011-.435-1.011-.973 0-.549.409-.971 1.036-.971s1.011.422 1.023.971c0 .538-.396.973-1.048.973zm8.084 7.024h-1.944v-3.467c0-.807-.282-1.355-.985-1.355-.537 0-.856.371-.997.728-.052.127-.065.307-.065.486v3.607H8.814v-4.26c0-.781-.025-1.434-.051-1.996h1.689l.089.869h.039c.256-.408.883-1.01 1.932-1.01 1.279 0 2.238.857 2.238 2.699v3.699z" />
     </svg>
   );
 }

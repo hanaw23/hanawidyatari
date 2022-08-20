@@ -1,4 +1,5 @@
 import LinkedinIcon from "../components/svg/LinkedinIcon";
+import GithubIcon from "../components/svg/projectIcons/GithubIcon";
 
 export const contacts = [
   {
@@ -10,8 +11,12 @@ export const contacts = [
     location: "Margahayu Raya Jl. Galaxy Selatan U2 Blok U2 No.123, Kelurahan Sekejati, Kecamatan Buah Batu, Bandung, Indonesia",
     socials: [
       {
-        icon: <LinkedinIcon height={30} width={30} className="dark:fill-gray-50 fill-slate-900 cursor-pointer" />,
+        icon: <LinkedinIcon height={25} width={25} className="dark:fill-gray-50 fill-slate-900 cursor-pointer" />,
         url: "https://www.linkedin.com/in/hana-widyatari/",
+      },
+      {
+        icon: <GithubIcon height={25} width={25} noHover={true} />,
+        url: "https://github.com/hanaw23",
       },
     ],
   },
