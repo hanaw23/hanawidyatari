@@ -5,6 +5,8 @@ import AboutMe from "./aboutMe";
 import Experiences from "./experiences";
 import Styles from "../styles/Styles.module.scss";
 import Projects from "./projects";
+import ContactMe from "./contactMe";
+import Footer from "../components/statics/Footer";
 
 export default function Home() {
   return (
@@ -27,6 +29,9 @@ export default function Home() {
       <Experiences />
 
       <Projects />
+
+      <ContactMe />
+      <Footer />
     </>
   );
 }

@@ -37,7 +37,7 @@ export default function ProjectDetailModal(props) {
 
         <div className="mt-4">
           <h3 className="text-m font-semibold mb-4 text-[#a934dc]">Technology</h3>
-          <div className="grid grid-cols-10 gap-x-1 gap-y-3 w-[550px]">
+          <div className="grid grid-cols-10 gap-1 w-[550px]">
             {props.icons?.map((icon, i) => {
               return <div key={i}>{icon.iconHtml}</div>;
             })}
