@@ -1,3 +1,5 @@
+import LinkButton from "../../components/buttons/LinkButton";
+
 export default function AboutMe() {
   return (
     <div className="h-screen ">
@@ -14,9 +16,7 @@ export default function AboutMe() {
       </div>
 
       <div className="ml-[480px] mt-20">
-        <button className="border border-transparent rounded-[20px] bg-gray-50 text-gray-900 px-3 py-1" onClick={() => (location.href = "assets/documents/HanaWidyatari_Web-Dev.pdf")}>
-          CV & Portfolio
-        </button>
+        <LinkButton children={false} text="CV & Portfolio" className="border border-transparent rounded-[20px] bg-gray-50 text-gray-900 px-3 py-1" onClick={() => (location.href = "assets/documents/HanaWidyatari_Web-Dev.pdf")} />
       </div>
     </div>
   );

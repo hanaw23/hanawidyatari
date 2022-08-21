@@ -3,7 +3,7 @@ import Footer from "../../components/statics/Footer";
 
 export default function index() {
   return (
-    <div className="h-fit bg-[#a934dc] z-20 pb-20 ">
+    <div className="h-fit bg-[#fffdff] dark:bg-[#0e0e0e] z-20 pb-20 ">
       <div className="py-5">
         <h1 className="mt-8 text-[45px] font-semibold mx-[315px]">Get In Touch With Me</h1>
       </div>
@@ -12,7 +12,7 @@ export default function index() {
         <div>
           <h3 className=" font-semibold text-[30px] w-[400px]">I am looking forward to start projects with you</h3>
           <p className="mt-8 w-[380px]">Email me if you interested to hire me on your project. I would be happy to join with your team.</p>
-          <button className="mt-5 border border-transparent bg-[#16011f] rounded-[50px] hover:bg-[#cd93e7]">
+          <button className="mt-5 border border-transparent bg-[#a934dc] rounded-[50px] hover:bg-transparent hover:border-[#a934dc] hover:text-[#a934dc]">
             <a href="mailto:hanawidyatari@gmail.com" target="_blank">
               <p className="px-10 py-3 font-semibold">EMAIL ME</p>
             </a>

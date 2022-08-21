@@ -21,7 +21,7 @@ export default function Home() {
           <Navbar />
 
           <div className="mb-10 ">
-            <h1 className="text-center text-[65px] mt-32 font-semibold text-[#b2aab5]">Explore My Works</h1>
+            <h1 className="text-center text-[75px] mt-32 font-semibold text-[#ffffff]">Explore My Works</h1>
           </div>
         </div>
       </div>
