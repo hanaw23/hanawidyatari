@@ -12,7 +12,7 @@ export default function Projects() {
   };
 
   return (
-    <div className="h-fit py-10 mt-40 mb-20">
+    <div className="h-fit py-10 mt-16 mb-20">
       <div className="flex justify-center">
         <h1 className="mt-10 text-[40px] mb-8 font-semibold">Personal Projects</h1>
       </div>

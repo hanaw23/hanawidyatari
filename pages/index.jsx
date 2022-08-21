@@ -1,30 +1,27 @@
 import Head from "next/head";
 
 import Navbar from "../components/statics/Navbar";
+import ScrollProgress from "../components/scrolls/ScrollProgress";
+import HomePage from "./home";
 import AboutMe from "./aboutMe";
 import Experiences from "./experiences";
-import Styles from "../styles/Styles.module.scss";
 import Projects from "./projects";
 import ContactMe from "./contactMe";
-import ScrollProgress from "../components/scrolls/ScrollProgress";
 
 export default function Home() {
   return (
     <>
-      <div className={`h-screen overflow-x-hidden ${Styles.background}`}>
-        <Head>
-          <title>Hana Widyatari | Portfolio 👩‍💻 </title>
-        </Head>
+      <Head>
+        <title>Hana Widyatari | Portfolio 👩‍💻 </title>
+      </Head>
 
-        <ScrollProgress />
-        <div className="overflow-hidden">
-          <Navbar />
+      <ScrollProgress />
 
-          <div className="mb-10 ">
-            <h1 className="text-center text-[75px] mt-32 font-semibold text-[#ffffff]">Explore My Works</h1>
-          </div>
-        </div>
-      </div>
+      <Navbar />
+
+      <section id="home">
+        <HomePage />
+      </section>
 
       <section id="aboutMe">
         <AboutMe />
