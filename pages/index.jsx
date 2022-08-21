@@ -14,6 +14,7 @@ export default function Home() {
         <Head>
           <title>Hana Widyatari | Portfolio 👩‍💻 </title>
         </Head>
+
         <div className="overflow-hidden">
           <Navbar />
 

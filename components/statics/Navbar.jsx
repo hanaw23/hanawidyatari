@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 import LightIcon from "../svg/LightIcon";
 import DarkIcon from "../svg/DarkIcon";
 import DetailHover from "../hovers/DetailHover";
+import ScrollProgress from "../scrolls/ScrollProgress";
 import { navbar } from "../../utility/navBarList";
 
 export default function Navbar() {
@@ -54,28 +55,32 @@ export default function Navbar() {
   };
 
   return (
-    <div className="bg-[#a934dc] dark:bg-[#0e0e0e] w-screen h-[58px] flex justify-around py-4 active fixed">
-      <div className="flex gap-2">
-        <div className="flex">
-          <h1 className="font-bold text-lg">Hana</h1>
-          <span className="font-bold text-lg text-blue-500">W</span>
+    <div className="fixed">
+      <ScrollProgress />
+
+      <div className="bg-[#fffdff] dark:bg-[#0e0e0e] w-screen h-[58px] flex justify-around py-4 active ">
+        <div className="flex gap-2">
+          <div className="flex">
+            <h1 className="font-bold text-lg">Hana</h1>
+            <span className="font-bold text-lg text-blue-500">W</span>
+          </div>
+          <span height={10} width={10}>
+            🤖
+          </span>
         </div>
-        <span height={10} width={10}>
-          🤖
-        </span>
+        <div className="ml-40 flex gap-10">
+          {navbar.map((item, i) => {
+            return (
+              <ul className=" text-sm" key={i}>
+                <li className="cursor-pointer">
+                  <a href={item.link}>{item.name}</a>
+                </li>
+              </ul>
+            );
+          })}
+        </div>
+        {renderThemeChanger()}
       </div>
-      <div className="ml-40 flex gap-10">
-        {navbar.map((item, i) => {
-          return (
-            <ul className=" text-sm" key={i}>
-              <li className="cursor-pointer">
-                <a href={item.link}>{item.name}</a>
-              </li>
-            </ul>
-          );
-        })}
-      </div>
-      {renderThemeChanger()}
     </div>
   );
 }
