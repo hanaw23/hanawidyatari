@@ -4,7 +4,7 @@ export default function Experiences() {
   return (
     <div className="h-screen">
       <div className="flex justify-center mb-8">
-        <h1 className="mt-10 text-[40px] font-semibold">Experiences</h1>
+        <h1 className="mt-10 text-[40px] font-semibold">Work Experiences</h1>
       </div>
 
       <div className="mt-20 w-[68%] mx-20">
