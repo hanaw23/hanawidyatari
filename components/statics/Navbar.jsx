@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import LightIcon from "../svg/LightIcon";
 import DarkIcon from "../svg/DarkIcon";
 import DetailHover from "../hovers/DetailHover";
-import ScrollProgress from "../scrolls/ScrollProgress";
+
 import { navbar } from "../../utility/navBarList";
 
 export default function Navbar() {
@@ -56,8 +56,6 @@ export default function Navbar() {
 
   return (
     <div className="fixed">
-      <ScrollProgress />
-
       <div className="bg-[#fffdff] dark:bg-[#0e0e0e] w-screen h-[58px] flex justify-around py-4 active ">
         <div className="flex gap-2">
           <div className="flex">

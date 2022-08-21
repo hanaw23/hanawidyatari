@@ -6,6 +6,7 @@ import Experiences from "./experiences";
 import Styles from "../styles/Styles.module.scss";
 import Projects from "./projects";
 import ContactMe from "./contactMe";
+import ScrollProgress from "../components/scrolls/ScrollProgress";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
           <title>Hana Widyatari | Portfolio 👩‍💻 </title>
         </Head>
 
+        <ScrollProgress />
         <div className="overflow-hidden">
           <Navbar />
 
