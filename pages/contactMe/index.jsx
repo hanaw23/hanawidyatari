@@ -12,6 +12,11 @@ export default function index() {
         <div>
           <h3 className=" font-semibold text-[30px] w-[400px]">I am looking forward to start projects with you</h3>
           <p className="mt-8 w-[380px]">Email me if you interested to hire me on your project. I would be happy to join with your team.</p>
+          {/* <LinkButton className="mt-5 border border-transparent bg-[#a934dc] rounded-[50px] hover:bg-transparent hover:border-[#a934dc] hover:text-[#a934dc]" children={true}>
+            <a href="mailto:hanawidyatari@gmail.com" target="_blank">
+              <p className="px-10 py-3 font-semibold">EMAIL ME</p>
+            </a>
+          </LinkButton> */}
           <button className="mt-5 border border-transparent bg-[#a934dc] rounded-[50px] hover:bg-transparent hover:border-[#a934dc] hover:text-[#a934dc]">
             <a href="mailto:hanawidyatari@gmail.com" target="_blank">
               <p className="px-10 py-3 font-semibold">EMAIL ME</p>
