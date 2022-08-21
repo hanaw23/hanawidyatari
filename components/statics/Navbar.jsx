@@ -11,6 +11,21 @@ export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [isHover, setIsHover] = useState(false);
+  const [show, setShow] = useState(true);
+
+  const controlNavbar = () => {
+    if (window.scrollY > 100) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+
+    return () => window.addEventListener("scroll", controlNavbar);
+  }, []);
 
   useEffect(() => {
     setMounted(true);
@@ -55,7 +70,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="fixed">
+    <div className={` ${show ? "fixed" : "hidden"}`}>
       <div className="bg-[#fffdff] dark:bg-[#0e0e0e] w-screen h-[58px] flex justify-around py-4 active ">
         <div className="flex gap-2">
           <div className="flex">
