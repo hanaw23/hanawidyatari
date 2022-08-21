@@ -11,7 +11,7 @@ export default function Experiences() {
         <div className="grid grid-cols-2 gap-8 ">
           {detailExp.map((item, i) => {
             return (
-              <div className=" mx-auto border border-transparent backdrop-blur-md bg-white/30 rounded-[10px] py-4 px-4 h-[320px] cursor-pointer hover:scale-125 hover:z-40">
+              <div className=" mx-auto border border-transparent backdrop-blur-md dark:bg-white/30 bg-gray-600/30 rounded-[10px] py-4 px-4 h-[320px] cursor-pointer hover:scale-125 hover:z-40">
                 <div key={i} className="text-center">
                   <div>
                     <h1 className="font-semibold text-[25px]">{item.role}</h1>
