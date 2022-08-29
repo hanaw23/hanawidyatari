@@ -58,11 +58,13 @@ export default function Navbar() {
           <DetailHover
             icon={
               <div className="flex flex-col px-2">
-                <DarkIcon role="button" onClick={() => setTheme("dark")} height={20} width={20} className="fill-gray-800" hover={() => setIsHover(true)} leave={() => setIsHover(!isHover)} />
+                <DarkIcon role="button" onClick={() => setTheme("dark")} height={20} width={20} className="fill-gray-50" hover={() => setIsHover(true)} leave={() => setIsHover(!isHover)} />
               </div>
             }
             detail="Dark"
             onHover={isHover}
+            classNameDiv="flex flex-col w-[50px] h-[50px]"
+            classNameDetail="w-fit -mt-3 ml-[18px]"
           />
         </>
       );
@@ -70,8 +72,8 @@ export default function Navbar() {
   };
 
   return (
-    <div className={` ${show ? "fixed" : "hidden"}`}>
-      <div className="bg-[#fffdff] dark:bg-[#0e0e0e] w-screen h-[58px] flex justify-around py-4 active ">
+    <div className={` ${show ? "fixed" : "hidden"} z-50`}>
+      <div className="backdrop-blur-md bg-white/6 text-gray-50 w-screen h-[58px] flex justify-around py-4 active ">
         <div className="flex gap-2">
           <div className="flex">
             <h1 className="font-bold text-lg">Hana</h1>
@@ -81,11 +83,11 @@ export default function Navbar() {
             🤖
           </span>
         </div>
-        <div className="ml-40 flex gap-10">
+        <div className="ml-40 flex gap-16">
           {navbar.map((item, i) => {
             return (
-              <ul className=" text-sm" key={i}>
-                <li className="cursor-pointer">
+              <ul className=" text-sm " key={i}>
+                <li className="cursor-pointer hover:text-[#d992f7]">
                   <a href={item.link}>{item.name}</a>
                 </li>
               </ul>

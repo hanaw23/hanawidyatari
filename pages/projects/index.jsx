@@ -17,15 +17,15 @@ export default function Projects() {
         <h1 className="mt-10 text-[40px] mb-8 font-semibold">Personal Projects</h1>
       </div>
 
-      <div className="flex justify-between">
-        <div className="grid grid-rows-4 gap-3 mx-20 ">
+      <div className="flex justify-between ">
+        <div className={`grid ${showDetail ? "grid-rows-4" : "grid-cols-3"}   ${showDetail ? "mx-20" : "ml-[250px]"} ${showDetail ? "gap-3" : "gap-x-8"} `}>
           {projects.map((item, i) => {
             return (
               <div>
                 <div
                   key={i}
                   id={item.id}
-                  className={`mt-10 hover:bg-[#a934dc] w-[350px] px-2 py-3 rounded-[5px] ${idDetail === `${item.id}` && showDetail ? "bg-[#a934dc]" : "bg-transparent"}`}
+                  className={`mt-10 hover:bg-[#a934dc] w-[350px] px-5 py-3 rounded-[5px] ${idDetail === `${item.id}` ? "bg-[#a934dc]" : "bg-transparent"}  `}
                   role="button"
                   onClick={() => handleShowDetailProject(item.id)}
                 >

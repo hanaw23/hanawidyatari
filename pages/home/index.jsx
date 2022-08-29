@@ -1,13 +1,23 @@
-import Styles from "../../styles/Styles.module.scss";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 export default function index() {
   return (
-    <div className={`h-screen overflow-x-hidden ${Styles.background}`}>
-      <div className="overflow-hidden">
-        <div className="mb-10 ">
-          <h1 className="text-center text-[75px] mt-32 font-semibold text-[#ffffff]">Explore My Works</h1>
-        </div>
-      </div>
+    <div className="h-screen overflow-x-hidden z-0">
+      <ParallaxBanner
+        layers={[
+          { image: "/assets/images/background.png", speed: -30 },
+          {
+            speed: -40,
+            children: (
+              <div className="absolute inset-0 flex items-center justify-center -mt-[425px]">
+                <h1 className="text-8xl text-gray-200 font-semibold">Explore My Works</h1>
+              </div>
+            ),
+          },
+          { image: "/assets/images/objectnowindow.png", speed: -15 },
+        ]}
+        className="aspect-[2/1]"
+      />
     </div>
   );
 }

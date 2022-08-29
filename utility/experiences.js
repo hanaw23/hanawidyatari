@@ -29,7 +29,7 @@ export const detailExp = [
     endDate: "Jul 2022",
     company: "Binar Academy",
     position: "Bootcamper",
-    role: "Bootcamp: Full Stack Web Developer",
+    role: "Full Stack Web Developer",
     desc: "Learned to code as a full stack web developer.",
     techs: [
       {
