@@ -5,7 +5,7 @@ import LightIcon from "../svg/LightIcon";
 import DarkIcon from "../svg/DarkIcon";
 import DetailHover from "../hovers/DetailHover";
 
-import { navbar } from "../../utility/navBarList";
+import { navbar } from "../../utility/navbarList";
 
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
