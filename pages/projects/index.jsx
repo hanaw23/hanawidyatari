@@ -17,7 +17,7 @@ export default function Projects() {
         <h1 className="mt-10 text-[40px] mb-8 font-semibold">Personal Projects</h1>
       </div>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between ">
         <div className={`grid ${showDetail ? "grid-rows-4" : "grid-cols-3"}   ${showDetail ? "mx-20" : "ml-[250px]"} ${showDetail ? "gap-3" : "gap-x-8"} `}>
           {projects.map((item, i) => {
             return (

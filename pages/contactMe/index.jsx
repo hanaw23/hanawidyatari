@@ -4,7 +4,7 @@ import LinkButton from "../../components/buttons/LinkButton";
 
 export default function index() {
   return (
-    <div className="h-fit bg-[#e9cbeb] dark:bg-[#0e0e0e] z-20 pb-20 ">
+    <div className="h-fit bg-[#d8d7d9] dark:bg-[#0e0e0e] z-20 pb-20 ">
       <div className="py-5">
         <h1 className="mt-8 text-[45px] font-semibold mx-[315px]">Get In Touch With Me</h1>
       </div>
