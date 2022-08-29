@@ -2,7 +2,7 @@ import LinkButton from "../../components/buttons/LinkButton";
 
 export default function AboutMe() {
   return (
-    <div className="h-fit mb-40 mt-20">
+    <div className="h-fit mb-28 mt-10">
       <div className="flex justify-center">
         <h1 className="mt-10 text-[40px] font-semibold">About Me</h1>
       </div>
