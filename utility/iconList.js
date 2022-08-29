@@ -11,7 +11,7 @@ import PostgreIcon from "../components/svg/projectIcons/PostgreIcon";
 import ExpressIcon from "../components/svg/projectIcons/ExpressIcon";
 import SwaggerIcon from "../components/svg/projectIcons/SwaggerIcon";
 import PostmanIcon from "../components/svg/projectIcons/PostmanIcon";
-import GitlabIcon from "../components/svg/projectIcons/GitLabIcon";
+import GitlabIcon from "../components/svg/projectIcons/GitlabIcon";
 import GitIcon from "../components/svg/projectIcons/Git";
 import HtmlIcon from "../components/svg/projectIcons/HtmlIcon";
 import EjsIcon from "../components/svg/projectIcons/EjsIcon";

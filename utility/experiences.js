@@ -20,7 +20,7 @@ import TailwindIcon from "../components/svg/projectIcons/TailwindIcon";
 import SassIcon from "../components/svg/projectIcons/SassIcon";
 import BitbucketIcon from "../components/svg/projectIcons/BitbucketIcon";
 import AxiosIcon from "../components/svg/projectIcons/AxiosIcon";
-import GitlabIcon from "../components/svg/projectIcons/GitLabIcon";
+import GitlabIcon from "../components/svg/projectIcons/GitlabIcon";
 
 export const detailExp = [
   {
