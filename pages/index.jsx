@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Hana Widyatari | Portfolio 👩‍💻 </title>
+        <title>Hana Widyatari</title>
       </Head>
 
       <ScrollProgress />
