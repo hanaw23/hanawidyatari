@@ -33,7 +33,7 @@ export default function TypescriptIcon(props) {
       detail="Typescript"
       onHover={isHover}
       classNameDiv="flex flex-col w-[50px] h-[50px]"
-      classNameDetail="w-fit -mt-3 ml-[12px]"
+      classNameDetail="w-fit -mt-3 ml-[6px]"
     />
   );
 }

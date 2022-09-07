@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 import Navbar from "../components/statics/Navbar";
 import ScrollProgress from "../components/scrolls/ScrollProgress";
 import HomePage from "./home";
@@ -11,10 +9,6 @@ import ContactMe from "./contactMe";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Hana Widyatari | Portfolio 👩‍💻 </title>
-      </Head>
-
       <ScrollProgress />
 
       <Navbar />
