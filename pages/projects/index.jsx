@@ -12,7 +12,7 @@ export default function Projects() {
   };
 
   return (
-    <div className="h-[975px] py-10 mb-20">
+    <div className={`${showDetail ? "h-[975px]" : "h-fits"} py-10 mb-20`}>
       <div className="flex justify-center">
         <h1 className="mt-10 text-[40px] mb-20 font-semibold">Personal Projects</h1>
       </div>
