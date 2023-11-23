@@ -1,6 +1,27 @@
-import { myStoreIconTech, todoIconTech, traditionalGame, bukulapakIconTech, vrGis } from "./iconList";
+import { myStoreIconTech, todoIconTech, traditionalGame, bukulapakIconTech, vrGis, phoneBookContacts } from "./iconList";
 
 export const projects = [
+  {
+    id: 0,
+    name: "Phone Book Contacts",
+    link: "https://phone-book-project-nine.vercel.app/contacts",
+    pics: [
+      {
+        id: 1,
+        urlPic: "assets/images/contactbook1.png",
+      },
+      {
+        id: 2,
+        urlPic: "assets/images/contactbook2.png",
+      },
+      {
+        id: 3,
+        urlPic: "assets/images/contactbook3.png",
+      },
+    ],
+    desc: "The Phone Book Contacts provides contacts number. This web application provides user to create contacts, edit, and delete contact. Also, provides favorite contact feature. User can searching contact by name.",
+    icons: phoneBookContacts,
+  },
   {
     id: 1,
     name: "Admin Panel (CMS) MyStore e-commerce",
@@ -22,7 +43,6 @@ export const projects = [
     desc: "The Admin Panel web (CMS) provides admin to manage not only the contents but also products and users of MyStore e-commerce web landing.",
     icons: myStoreIconTech,
   },
-
   {
     id: 2,
     name: "To Do List Activity",

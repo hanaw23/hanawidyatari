@@ -12,12 +12,12 @@ export default function Projects() {
   };
 
   return (
-    <div className="h-fit py-10 mt-16 mb-20">
+    <div className="h-[975px] py-10 mb-20">
       <div className="flex justify-center">
-        <h1 className="mt-10 text-[40px] mb-8 font-semibold">Personal Projects</h1>
+        <h1 className="mt-10 text-[40px] mb-20 font-semibold">Personal Projects</h1>
       </div>
 
-      <div className="flex justify-between ">
+      <div className="flex justify-between">
         <div className={`grid ${showDetail ? "grid-rows-4" : "grid-cols-3"}   ${showDetail ? "mx-20" : "ml-[250px]"} ${showDetail ? "gap-3" : "gap-x-8"} `}>
           {projects.map((item, i) => {
             return (
@@ -32,11 +32,9 @@ export default function Projects() {
                   <h1>{item.name}</h1>
                 </div>
 
-                <div>
-                  {idDetail === `${item.id}` && showDetail ? (
-                    <ProjectDetailModal className="mr-[100px] w-[850px] h-[600px] z-10 px-3 -mt-[1165px] ml-[550px]" name={item.name} pics={item.pics} desc={item.desc} link={item.link} icons={item.icons} />
-                  ) : null}
-                </div>
+                {idDetail === `${item.id}` && showDetail ? (
+                  <ProjectDetailModal className="mr-[100px] w-[850px] h-[850px] z-10 px-3 -mt-[1400px]  ml-[550px]" name={item.name} pics={item.pics} desc={item.desc} link={item.link} icons={item.icons} />
+                ) : null}
               </div>
             );
           })}

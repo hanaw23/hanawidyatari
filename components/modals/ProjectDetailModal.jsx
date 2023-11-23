@@ -10,7 +10,7 @@ export default function ProjectDetailModal(props) {
 
   const cardDetailModal = (
     <div className={props.className}>
-      <div className=" px-8 py-4">
+      <div>
         <h2 className="text-center text-[25px] font-semibold text-[#a934dc]">{props.name}</h2>
         <div className="flex justify-center gap-3">
           {props.pics?.map((pic) => {
