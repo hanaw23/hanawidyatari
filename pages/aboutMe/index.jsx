@@ -11,8 +11,8 @@ export default function AboutMe() {
         <hr />
 
         <p className="mt-2 px-5">
-          I am a Frontend Web Developer. Learning to code as a bootcamper in academy. Always feels exciting to explore more journey with a new and challenging projects. Currently Iam working with my personal portfolio and enhancing skills
-          with React JS and Next JS as my ultimate tools.
+          A Frontend Web Developer. Learning to code as a bootcamper in academy. 1 year experience as Frontend Developer, built healthcare web applications and personal projects with Vue (Nuxt JS) and React (Next Js) as ultimate tools.
+          Always feels exciting to explore more journey with a new and challenging projects.
         </p>
       </div>
 
@@ -21,7 +21,7 @@ export default function AboutMe() {
         <LinkButton
           children="CLICK ME"
           className="border border-transparent bg-[#a934dc] rounded-[50px] hover:bg-transparent hover:border-[#a934dc] hover:text-[#a934dc] px-10 py-3 font-semibold"
-          onClick={() => (location.href = "assets/documents/HanaWidyatari_Web-Dev.pdf")}
+          onClick={() => (location.href = "assets/documents/HanaWidyatari-resume-CV.pdf")}
         />
       </div>
     </div>

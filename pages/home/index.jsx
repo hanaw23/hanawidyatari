@@ -2,7 +2,7 @@ import { ParallaxBanner } from "react-scroll-parallax";
 
 export default function index() {
   return (
-    <div className="h-screen overflow-x-hidden z-0">
+    <div className="h-screen overflow-x-hidden overflow-y-hidden z-0">
       <ParallaxBanner
         layers={[
           { image: "assets/images/background.png", speed: -30 },

@@ -21,10 +21,189 @@ import SassIcon from "../components/svg/projectIcons/SassIcon";
 import BitbucketIcon from "../components/svg/projectIcons/BitbucketIcon";
 import AxiosIcon from "../components/svg/projectIcons/AxiosIcon";
 import GitlabIcon from "../components/svg/projectIcons/GitlabIcon";
+import GitHubIcon from "../components/svg/projectIcons/GithubIcon";
+import VueIcon from "../components/svg/projectIcons/VueIcon";
+import NuxtIcon from "../components/svg/projectIcons/NuxtJsIcon";
+import GraphqlIcon from "../components/svg/projectIcons/GraphqlIcon";
 
 export const detailExp = [
   {
     id: 1,
+    startDate: "Oct 2022",
+    endDate: "current",
+    company: "Mazecare",
+    position: "Full-time",
+    role: "Software Engineer (Frontend)",
+    desc: "Made Healthcare web application using Vue with Nuxt3. Communicate with client to discuss about the project.",
+    techs: [
+      {
+        id: 1,
+        iconHtml: (
+          <div>
+            <TypescriptIcon height={20} width={20} className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 2,
+        iconHtml: (
+          <div>
+            <HtmlIcon height={20} width={20} className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 3,
+        iconHtml: (
+          <div>
+            <CssIcon height={20} width={20} className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 4,
+        iconHtml: (
+          <div>
+            <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 5,
+        iconHtml: (
+          <div>
+            <VueIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 6,
+        iconHtml: (
+          <div>
+            <NuxtIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 7,
+        iconHtml: (
+          <div>
+            <GraphqlIcon height={20} width={20} className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 8,
+        iconHtml: (
+          <div>
+            <GitHubIcon height={20} width={20} className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 9,
+        iconHtml: (
+          <div>
+            <GitIcon height={20} width={20} className="cursor-pointer" />
+          </div>
+        ),
+      },
+    ],
+  },
+  {
+    id: 2,
+    startDate: "Mar 2022",
+    endDate: "May 2022",
+    company: "Radya Labs",
+    position: "Contract",
+    role: "Junior Frontend Developer Web",
+    desc: "Made a CMS web using typescript language. Translated a web ui for website from UI/UX design into code using ReactJs with NextJs and Tailwind as the styling.",
+    techs: [
+      {
+        id: 1,
+        iconHtml: (
+          <div>
+            <TypescriptIcon height={20} width={20} className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 3,
+        iconHtml: (
+          <div>
+            <SassIcon height={20} width={20} className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 4,
+        iconHtml: (
+          <div>
+            <NodeIcon height={20} width={20} fill="#539e43" className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 5,
+        iconHtml: (
+          <div>
+            <ReactIcon height={20} width={20} fill="#61dafb" className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 6,
+        iconHtml: (
+          <div>
+            <NextIcon height={20} width={20} />
+          </div>
+        ),
+      },
+      {
+        id: 7,
+        iconHtml: (
+          <div>
+            <AxiosIcon height={25} width={25} className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 8,
+        iconHtml: (
+          <div>
+            <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 9,
+        iconHtml: (
+          <div>
+            <SwaggerIcon height={20} width={20} className="cursor-pointer" />
+          </div>
+        ),
+      },
+      {
+        id: 10,
+        iconHtml: (
+          <div>
+            <GitIcon height={20} width={20} className="cursor-pointer" />
+          </div>
+        ),
+      },
+
+      {
+        id: 12,
+        iconHtml: (
+          <div>
+            <BitbucketIcon height={20} width={20} className="cursor-pointer" />
+          </div>
+        ),
+      },
+    ],
+  },
+  {
+    id: 3,
     startDate: "Jan 2022",
     endDate: "Jul 2022",
     company: "Binar Academy",
@@ -189,99 +368,7 @@ export const detailExp = [
     ],
   },
   {
-    id: 2,
-    startDate: "Mar 2022",
-    endDate: "May 2022",
-    company: "Radya Labs",
-    position: "Contract",
-    role: "Junior Frontend Developer Web",
-    desc: "Made a CMS web using typescript language. Translated a web ui for website from UI/UX design into code using ReactJs with NextJs and Tailwind as the styling.",
-    techs: [
-      {
-        id: 1,
-        iconHtml: (
-          <div>
-            <TypescriptIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
-      },
-      {
-        id: 3,
-        iconHtml: (
-          <div>
-            <SassIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
-      },
-      {
-        id: 4,
-        iconHtml: (
-          <div>
-            <NodeIcon height={20} width={20} fill="#539e43" className="cursor-pointer" />
-          </div>
-        ),
-      },
-      {
-        id: 5,
-        iconHtml: (
-          <div>
-            <ReactIcon height={20} width={20} fill="#61dafb" className="cursor-pointer" />
-          </div>
-        ),
-      },
-      {
-        id: 6,
-        iconHtml: (
-          <div>
-            <NextIcon height={20} width={20} />
-          </div>
-        ),
-      },
-      {
-        id: 7,
-        iconHtml: (
-          <div>
-            <AxiosIcon height={25} width={25} className="cursor-pointer" />
-          </div>
-        ),
-      },
-      {
-        id: 8,
-        iconHtml: (
-          <div>
-            <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
-          </div>
-        ),
-      },
-      {
-        id: 9,
-        iconHtml: (
-          <div>
-            <SwaggerIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
-      },
-      {
-        id: 10,
-        iconHtml: (
-          <div>
-            <GitIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
-      },
-
-      {
-        id: 12,
-        iconHtml: (
-          <div>
-            <BitbucketIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
-      },
-    ],
-  },
-  {
-    id: 3,
+    id: 4,
     startDate: "Jun 2021",
     endDate: "Sept 2021",
     company: "Ministry of Agrarian Affaits and Spatial Planning",
@@ -290,12 +377,12 @@ export const detailExp = [
     desc: "Revalidated the digital land books database in the KKP’s website based on the physic of the land books for Centre of Jakarta area.Added and corrected the textual mistakes from the digital land books in KKP website.",
   },
   {
-    id: 4,
+    id: 5,
     startDate: "Feb 2019",
     endDate: "Aug 2019",
     company: "PT. Inovasi Geomatika Indonesia",
     position: "Internship",
-    role: "Analyst and Development",
+    role: "Analyst and Development Engineer",
     desc: "Created virtual reality (VR) from 3D model and attached some information about the object.",
     techs: [
       {

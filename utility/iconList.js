@@ -18,7 +18,84 @@ import EjsIcon from "../components/svg/projectIcons/EjsIcon";
 import GithubIcon from "../components/svg/projectIcons/GithubIcon";
 import BootstrapIcon from "../components/svg/projectIcons/BootstrapIcon";
 import VrIcon from "../components/svg/projectIcons/VrIcon";
+import GraphqlIcon from "../components/svg/projectIcons/GraphqlIcon";
+import GitHubIcon from "../components/svg/projectIcons/GithubIcon";
+import TypescriptIcon from "../components/svg/projectIcons/TypescriptIcon";
 
+export const phoneBookContacts = [
+  {
+    id: 1,
+    iconHtml: (
+      <div>
+        <TypescriptIcon height={30} width={30} fill="#facc15" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    iconHtml: (
+      <div>
+        <CssIcon height={30} width={30} className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    iconHtml: (
+      <div>
+        <ReactIcon height={30} width={30} fill="#61dafb" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    iconHtml: (
+      <div>
+        <NextIcon height={30} width={30} />
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    iconHtml: (
+      <div>
+        <GraphqlIcon height={30} width={30} fill="#6366f1" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 12,
+    iconHtml: (
+      <div>
+        <PostmanIcon height={30} width={30} className="cursor-pointer" fill="#f97316" />
+      </div>
+    ),
+  },
+  {
+    id: 13,
+    iconHtml: (
+      <div>
+        <GitHubIcon height={30} width={30} className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 14,
+    iconHtml: (
+      <div>
+        <GitIcon height={30} width={30} className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 15,
+    iconHtml: (
+      <div>
+        <VercelIcon height={30} width={30} />
+      </div>
+    ),
+  },
+];
 export const myStoreIconTech = [
   {
     id: 1,
@@ -142,7 +219,6 @@ export const myStoreIconTech = [
     ),
   },
 ];
-
 export const todoIconTech = [
   {
     id: 1,
@@ -233,7 +309,6 @@ export const todoIconTech = [
     ),
   },
 ];
-
 export const traditionalGame = [
   {
     id: 1,
@@ -332,7 +407,6 @@ export const traditionalGame = [
     ),
   },
 ];
-
 export const bukulapakIconTech = [
   {
     id: 1,
@@ -383,7 +457,6 @@ export const bukulapakIconTech = [
     ),
   },
 ];
-
 export const vrGis = [
   {
     id: 1,
