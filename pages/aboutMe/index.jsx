@@ -11,13 +11,13 @@ export default function AboutMe() {
         <hr />
 
         <p className="mt-2 px-5">
-          A Frontend Web Developer. Learning to code as a bootcamper in academy. 1 year experience as Frontend Developer, built healthcare web applications and personal projects with Vue (Nuxt JS) and React (Next Js) as ultimate tools.
+          A Frontend Web Developer. Learning to code as a bootcamper in academy with 1 year experience as Frontend Developer, built healthcare web applications and personal projects with Vue (Nuxt JS) and React (Next Js) as ultimate tools.
           Always feels exciting to explore more journey with a new and challenging projects.
         </p>
       </div>
 
       <div className="ml-[480px] mt-10">
-        <p className="mb-4">Kindly check my CV for more details</p>
+        <p className="mb-4">Kindly check my resume for more details</p>
         <LinkButton
           children="CLICK ME"
           className="border border-transparent bg-[#a934dc] rounded-[50px] hover:bg-transparent hover:border-[#a934dc] hover:text-[#a934dc] px-10 py-3 font-semibold"
