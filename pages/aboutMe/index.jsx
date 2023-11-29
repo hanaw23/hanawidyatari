@@ -21,7 +21,7 @@ export default function AboutMe() {
         <LinkButton
           children="CLICK ME"
           className="border border-transparent bg-[#a934dc] rounded-[50px] hover:bg-transparent hover:border-[#a934dc] hover:text-[#a934dc] px-10 py-3 font-semibold"
-          onClick={() => (location.href = "assets/documents/HanaWidyatari-resume-CV.pdf")}
+          onClick={() => (location.href = "assets/documents/HanaWidyatari-resume.pdf")}
         />
       </div>
     </div>
