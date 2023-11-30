@@ -4,7 +4,7 @@ import LinkButton from "../../components/buttons/LinkButton";
 
 export default function index() {
   return (
-    <div className="h-fit bg-[#d8d7d9] dark:bg-[#0e0e0e] z-20 pb-20 ">
+    <div className="h-fit bg-[#ddd1e3] dark:bg-[#0e0e0e] z-20 pb-20 ">
       <div className="py-5">
         <h1 className="mt-8 text-[45px] font-semibold mx-[315px]">Get In Touch With Me</h1>
       </div>
@@ -19,7 +19,7 @@ export default function index() {
                 <p className="px-10 py-3 font-semibold">EMAIL ME</p>
               </a>
             }
-            className="mt-5 border border-transparent bg-[#a934dc] rounded-[50px] hover:bg-transparent hover:border-[#a934dc] hover:text-[#a934dc]"
+            className="mt-5 border border-[#a934dc] text-[#a934dc] hover:bg-[#a934dc] hover:text-white rounded-[50px] dark:text-white dark:hover:bg-transparent dark:hover:border-[#a934dc] dark:hover:text-[#a934dc] dark:bg-[#a934dc]"
           />
         </div>
 

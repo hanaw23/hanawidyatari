@@ -25,7 +25,7 @@ export default function Projects() {
                 <div
                   key={i}
                   id={item.id}
-                  className={`mt-10 hover:bg-[#a934dc] w-[350px] px-5 py-3 rounded-[5px] ${idDetail === `${item.id}` ? "bg-[#a934dc]" : "bg-transparent"}  `}
+                  className={`mt-10 hover:bg-[#a934dc] bg-[#a934dc] w-[350px] px-5 py-3 rounded-[5px] ${idDetail === `${item.id}` ? "bg-[#a934dc]" : "bg-transparent"}`}
                   role="button"
                   onClick={() => handleShowDetailProject(item.id)}
                 >

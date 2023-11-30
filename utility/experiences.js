@@ -373,7 +373,7 @@ export const detailExp = [
     endDate: "Sept 2021",
     company: "Ministry of Agrarian Affaits and Spatial Planning",
     position: "Contract",
-    role: "Revalidation and Quality Control Officer",
+    role: "Revalidation and Quality Control Data",
     desc: "Revalidated the digital land books database in the KKP’s website based on the physic of the land books for Centre of Jakarta area.Added and corrected the textual mistakes from the digital land books in KKP website.",
   },
   {
