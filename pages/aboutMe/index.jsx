@@ -11,7 +11,7 @@ export default function AboutMe() {
         <hr />
 
         <p className="mt-2 px-5">
-          A Frontend Web Developer who loves to learn everything especially web and mobile design and code. Learning to code as a bootcamper in academy with 1 year experience as Frontend Developer, have been built commercial project web
+          A Frontend Web Developer who loves to learn everything especially web and mobile development. Learning to code as a bootcamper in academy with 1 year experience as Frontend Developer, have been built commercial project web
           applications with team and personal projects with Vue (Nuxt 3) and React (Next Js) as ultimate tools. Always feels exciting to explore more journey with a new and challenging projects.
         </p>
       </div>
