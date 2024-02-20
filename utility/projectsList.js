@@ -19,7 +19,7 @@ export const projects = [
         urlPic: "assets/images/contactbook3.png",
       },
     ],
-    desc: "The Phone Book Contacts provides contacts number. This web application provides user to create contacts, edit, and delete contact. Also, provides favorite contact feature. User can searching contact by name.",
+    desc: "The Phone Book Contacts provides contacts number. This is mobile first web aplication that provides user to create contacts, edit, and delete contact. Also, provides favorite contact feature. User can searching contact by name.",
     icons: phoneBookContacts,
   },
   {
