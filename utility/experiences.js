@@ -28,9 +28,56 @@ import GraphqlIcon from "../components/svg/projectIcons/GraphqlIcon";
 
 export const detailExp = [
   {
+    id: 0,
+    startDate: "March 2022",
+    endDate: "current",
+    company: "Broom.id",
+    position: "Full-time",
+    role: "Frontend Developer",
+    desc: "Develop and maintain a commercial mobile app using React Native, an internal web app with React.js and Next.js, and an internal mobile app with React Native.",
+    techs: [
+      {
+        id: 1,
+        iconHtml: <TypescriptIcon height={20} width={20} className="cursor-pointer" />,
+      },
+      {
+        id: 2,
+        iconHtml: <HtmlIcon height={20} width={20} className="cursor-pointer" />,
+      },
+      {
+        id: 3,
+        iconHtml: <CssIcon height={20} width={20} className="cursor-pointer" />,
+      },
+      {
+        id: 4,
+        iconHtml: <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />,
+      },
+      {
+        id: 5,
+        iconHtml: <NextIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />,
+      },
+      {
+        id: 6,
+        iconHtml: <ReactIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />,
+      },
+      {
+        id: 7,
+        iconHtml: <GitHubIcon height={20} width={20} className="cursor-pointer" />,
+      },
+      {
+        id: 8,
+        iconHtml: <GitIcon height={20} width={20} className="cursor-pointer" />,
+      },
+      {
+        id: 9,
+        iconHtml: <AxiosIcon height={25} width={25} className="cursor-pointer" />,
+      },
+    ],
+  },
+  {
     id: 1,
     startDate: "Oct 2022",
-    endDate: "current",
+    endDate: "Dec 2023",
     company: "Mazecare",
     position: "Full-time",
     role: "Software Engineer (Frontend)",
@@ -38,75 +85,39 @@ export const detailExp = [
     techs: [
       {
         id: 1,
-        iconHtml: (
-          <div>
-            <TypescriptIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <TypescriptIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 2,
-        iconHtml: (
-          <div>
-            <HtmlIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <HtmlIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 3,
-        iconHtml: (
-          <div>
-            <CssIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <CssIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 4,
-        iconHtml: (
-          <div>
-            <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />,
       },
       {
         id: 5,
-        iconHtml: (
-          <div>
-            <VueIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <VueIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />,
       },
       {
         id: 6,
-        iconHtml: (
-          <div>
-            <NuxtIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <NuxtIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />,
       },
       {
         id: 7,
-        iconHtml: (
-          <div>
-            <GraphqlIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <GraphqlIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 8,
-        iconHtml: (
-          <div>
-            <GitHubIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <GitHubIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 9,
-        iconHtml: (
-          <div>
-            <GitIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <GitIcon height={20} width={20} className="cursor-pointer" />,
       },
     ],
   },
@@ -121,84 +132,44 @@ export const detailExp = [
     techs: [
       {
         id: 1,
-        iconHtml: (
-          <div>
-            <TypescriptIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <TypescriptIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 3,
-        iconHtml: (
-          <div>
-            <SassIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <SassIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 4,
-        iconHtml: (
-          <div>
-            <NodeIcon height={20} width={20} fill="#539e43" className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <NodeIcon height={20} width={20} fill="#539e43" className="cursor-pointer" />,
       },
       {
         id: 5,
-        iconHtml: (
-          <div>
-            <ReactIcon height={20} width={20} fill="#61dafb" className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <ReactIcon height={20} width={20} fill="#61dafb" className="cursor-pointer" />,
       },
       {
         id: 6,
-        iconHtml: (
-          <div>
-            <NextIcon height={20} width={20} />
-          </div>
-        ),
+        iconHtml: <NextIcon height={20} width={20} />,
       },
       {
         id: 7,
-        iconHtml: (
-          <div>
-            <AxiosIcon height={25} width={25} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <AxiosIcon height={25} width={25} className="cursor-pointer" />,
       },
       {
         id: 8,
-        iconHtml: (
-          <div>
-            <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />,
       },
       {
         id: 9,
-        iconHtml: (
-          <div>
-            <SwaggerIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <SwaggerIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 10,
-        iconHtml: (
-          <div>
-            <GitIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <GitIcon height={20} width={20} className="cursor-pointer" />,
       },
 
       {
         id: 12,
-        iconHtml: (
-          <div>
-            <BitbucketIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <BitbucketIcon height={20} width={20} className="cursor-pointer" />,
       },
     ],
   },
@@ -213,157 +184,81 @@ export const detailExp = [
     techs: [
       {
         id: 1,
-        iconHtml: (
-          <div>
-            <JavascriptIcon height={20} width={20} fill="#facc15" className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <JavascriptIcon height={20} width={20} fill="#facc15" className="cursor-pointer" />,
       },
       {
         id: 2,
-        iconHtml: (
-          <div>
-            <HtmlIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <HtmlIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 3,
-        iconHtml: (
-          <div>
-            <CssIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <CssIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 4,
-        iconHtml: (
-          <div>
-            <NodeIcon height={20} width={20} fill="#539e43" className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <NodeIcon height={20} width={20} fill="#539e43" className="cursor-pointer" />,
       },
       {
         id: 5,
-        iconHtml: (
-          <div>
-            <ReactIcon height={20} width={20} fill="#61dafb" className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <ReactIcon height={20} width={20} fill="#61dafb" className="cursor-pointer" />,
       },
       {
         id: 6,
-        iconHtml: (
-          <div>
-            <NextIcon height={20} width={20} />
-          </div>
-        ),
+        iconHtml: <NextIcon height={20} width={20} />,
       },
       {
         id: 7,
-        iconHtml: (
-          <div>
-            <ReduxIcon height={20} width={20} fill="#6366f1" className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <ReduxIcon height={20} width={20} fill="#6366f1" className="cursor-pointer" />,
       },
       {
         id: 8,
-        iconHtml: (
-          <div>
-            <AxiosIcon height={25} width={25} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <AxiosIcon height={25} width={25} className="cursor-pointer" />,
       },
       {
         id: 9,
-        iconHtml: (
-          <div>
-            <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />,
       },
 
       {
         id: 10,
-        iconHtml: (
-          <div>
-            <ExpressIcon height={25} width={25} />
-          </div>
-        ),
+        iconHtml: <ExpressIcon height={25} width={25} />,
       },
       {
         id: 11,
-        iconHtml: (
-          <div>
-            <PostgreIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <PostgreIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 12,
-        iconHtml: (
-          <div>
-            <SwaggerIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <SwaggerIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 13,
-        iconHtml: (
-          <div>
-            <PostmanIcon height={20} width={20} className="cursor-pointer" fill="#f97316" />
-          </div>
-        ),
+        iconHtml: <PostmanIcon height={20} width={20} className="cursor-pointer" fill="#f97316" />,
       },
       {
         id: 14,
-        iconHtml: (
-          <div>
-            <GitlabIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <GitlabIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 15,
-        iconHtml: (
-          <div>
-            <GitIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <GitIcon height={20} width={20} className="cursor-pointer" />,
       },
       {
         id: 16,
-        iconHtml: (
-          <div>
-            <VercelIcon height={20} width={20} />
-          </div>
-        ),
+        iconHtml: <VercelIcon height={20} width={20} />,
       },
       {
         id: 17,
-        iconHtml: (
-          <div>
-            <EjsIcon height={20} width={20} />
-          </div>
-        ),
+        iconHtml: <EjsIcon height={20} width={20} />,
       },
       {
         id: 18,
-        iconHtml: (
-          <div>
-            <FirebaseIcon height={20} width={20} className="cursor-pointer" />
-          </div>
-        ),
+        iconHtml: <FirebaseIcon height={20} width={20} className="cursor-pointer" />,
       },
 
       {
         id: 19,
-        iconHtml: (
-          <div>
-            <BootstrapIcon height={20} width={20} />
-          </div>
-        ),
+        iconHtml: <BootstrapIcon height={20} width={20} />,
       },
     ],
   },
