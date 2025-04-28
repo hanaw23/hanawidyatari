@@ -1,5 +1,3 @@
-import LinkButton from "../../components/buttons/LinkButton";
-
 export default function AboutMe() {
   return (
     <div className="h-fit mb-28 mt-10">
@@ -11,18 +9,20 @@ export default function AboutMe() {
         <hr />
 
         <p className="mt-2 px-5">
-          A Frontend Web Developer who loves to learn everything especially web and mobile development. Learning to code as a bootcamper in academy with 1 year experience as Frontend Developer, have been built commercial project web
-          applications with team and personal projects with Vue (Nuxt 3) and React (Next Js) as ultimate tools. Always feels exciting to explore more journey with a new and challenging projects.
+          a Frontend Developer with 2 years of experience building web and mobile apps. I started my journey through a coding bootcamp and have worked on both team and solo projects. I use React, Vue, and React Native to create
+          user-friendly, functional applications. I’m always excited to learn more and take on new challenges
         </p>
       </div>
 
       <div className="ml-[480px] mt-10">
         <p className="mb-4">Kindly check my resume for more details</p>
-        <LinkButton
-          children="CLICK ME"
-          className="border rounded-[50px]  px-10 py-3 font-semibold border-[#a934dc] text-[#a934dc] hover:bg-[#a934dc] hover:text-white dark:text-white dark:hover:bg-transparent dark:hover:border-[#a934dc] dark:hover:text-[#a934dc] dark:bg-[#a934dc]"
-          onClick={() => (location.href = "assets/documents/HanaWidyatari-resume.pdf")}
-        />
+        <a
+          href={"assets/documents/HanaWidyatari-resume.pdf"}
+          target="_blank"
+          className="w-full border rounded-[50px]  px-10 py-3 font-semibold border-[#a934dc] text-[#a934dc] hover:bg-[#a934dc] hover:text-white dark:text-white dark:hover:bg-transparent dark:hover:border-[#a934dc] dark:hover:text-[#a934dc] dark:bg-[#a934dc]"
+        >
+          Click Me
+        </a>
       </div>
     </div>
   );

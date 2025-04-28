@@ -29,12 +29,12 @@ import GraphqlIcon from "../components/svg/projectIcons/GraphqlIcon";
 export const detailExp = [
   {
     id: 0,
-    startDate: "March 2022",
-    endDate: "current",
+    startDate: "March 2024",
+    endDate: "May 2025",
     company: "Broom.id",
     position: "Full-time",
     role: "Frontend Developer",
-    desc: "Develop and maintain a commercial mobile app using React Native, an internal web app with React.js and Next.js, and an internal mobile app with React Native.",
+    desc: "Develop and maintain a commercial mobile app using React Native, and internal web and mobile application using React and React Native.",
     techs: [
       {
         id: 1,
