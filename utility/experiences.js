@@ -33,8 +33,8 @@ export const detailExp = [
     endDate: "May 2025",
     company: "Broom.id",
     position: "Full-time",
-    role: "Frontend Developer",
-    desc: "Develop and maintain a commercial mobile app using React Native, and internal web and mobile application using React and React Native.",
+    role: "Junior Frontend Developer",
+    desc: "Develop and maintain a commercial mobile app (IOS and Android) using React Native, and internal web and mobile application (IOS and Android) using React and React Native.",
     techs: [
       {
         id: 1,
@@ -127,7 +127,7 @@ export const detailExp = [
     endDate: "May 2022",
     company: "Radya Labs",
     position: "Contract",
-    role: "Junior Frontend Developer Web",
+    role: "Intern Frontend Developer Web",
     desc: "Made a CMS web using typescript language. Translated a web ui for website from UI/UX design into code using ReactJs with NextJs and Tailwind as the styling.",
     techs: [
       {
