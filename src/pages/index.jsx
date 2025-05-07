@@ -1,31 +1,33 @@
 import Navbar from "@hanawidyatari/components/statics/Navbar";
 import ScrollProgress from "@hanawidyatari/components/scrolls/ScrollProgress";
 import HomePage from "@hanawidyatari/pages/home";
-import AboutMe from "@hanawidyatari/pages/aboutMe";
-import Experiences from "@hanawidyatari/pages/experiences";
-import Projects from "@hanawidyatari/pages/projects";
-import ContactMe from "@hanawidyatari/pages/contactMe";
+import AboutMePage from "@hanawidyatari/pages/aboutMe";
+import ExperiencesPage from "@hanawidyatari/pages/experiences";
+import ProjectsPage from "@hanawidyatari/pages/projects";
+import ContactMePage from "@hanawidyatari/pages/contactMe";
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <>
       <ScrollProgress />
-      <Navbar />
+      <div className="hidden lg:block">
+        <Navbar />
+      </div>
       <section id="home">
         <HomePage />
       </section>
       <section id="aboutMe">
-        <AboutMe />
+        <AboutMePage />
       </section>
       <section id="experiences">
-        <Experiences />
+        <ExperiencesPage />
       </section>
       <section id="projects">
-        <Projects />
+        <ProjectsPage />
       </section>
       <section id="contactMe">
-        <ContactMe />
+        <ContactMePage />
       </section>
-    </div>
+    </>
   );
 }

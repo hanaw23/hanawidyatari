@@ -62,7 +62,7 @@ const Navbar = () => {
         <div className="flex gap-2">
           <div className="flex">
             <h1 className="font-bold text-lg">Hana</h1>
-            <span className="font-bold text-lg text-blue-500">W</span>
+            <span className="font-bold text-lg text-orange-500">W</span>
           </div>
           <span height={10} width={10}>
             🤖

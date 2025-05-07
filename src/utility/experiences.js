@@ -34,7 +34,7 @@ export const detailExp = [
     company: "Broom.id",
     position: "Full-time",
     role: "Junior Frontend Developer",
-    desc: "Develop and maintain a commercial mobile app (IOS and Android) using React Native, and internal web and mobile application (IOS and Android) using React and React Native.",
+    desc: "Developed and maintained a commercial mobile app (iOS and Android) using React Native, and internal web and mobile application (iOS and Android) using React and React Native.",
     techs: [
       {
         id: 1,
@@ -126,9 +126,9 @@ export const detailExp = [
     startDate: "Mar 2022",
     endDate: "May 2022",
     company: "Radya Labs",
-    position: "Contract",
+    position: "Internship",
     role: "Intern Frontend Developer Web",
-    desc: "Made a CMS web using typescript language. Translated a web ui for website from UI/UX design into code using ReactJs with NextJs and Tailwind as the styling.",
+    desc: "Made a CMS web using typescript. Translated the design web from UI/UX team into code using ReactJs with NextJs and Tailwind as the styling.",
     techs: [
       {
         id: 1,
@@ -180,7 +180,7 @@ export const detailExp = [
     company: "Binar Academy",
     position: "Bootcamper",
     role: "Full Stack Web Developer",
-    desc: "Learned to code as a full stack web developer.",
+    desc: "Learned to code as a full stack web developer. Built personal and team projects using React, Next Js, and Node Js as the tools.",
     techs: [
       {
         id: 1,
@@ -245,20 +245,7 @@ export const detailExp = [
       },
       {
         id: 16,
-        iconHtml: <VercelIcon height={20} width={20} />,
-      },
-      {
-        id: 17,
-        iconHtml: <EjsIcon height={20} width={20} />,
-      },
-      {
-        id: 18,
         iconHtml: <FirebaseIcon height={20} width={20} className="cursor-pointer" />,
-      },
-
-      {
-        id: 19,
-        iconHtml: <BootstrapIcon height={20} width={20} />,
       },
     ],
   },

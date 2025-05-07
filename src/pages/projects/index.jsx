@@ -1,44 +1,62 @@
-import { useState } from "react";
-import { projects } from "@hanawidyatari/utils/projectsList";
+import { useState, useMemo } from "react";
+import { personalProjects, professionalProjects } from "@hanawidyatari/utils/projectsList";
 import ProjectDetailModal from "@hanawidyatari/components/modals/ProjectDetailModal";
-import ProjectDetailMOdal from "@hanawidyatari/components/modals/ProjectDetailModal";
+import ProjectCard from "@hanawidyatari/components/cards/ProjectCard";
+import ProjectDetailCard from "@hanawidyatari/components/cards/ProjectDetailCard";
+
+const projects = ["Professional Projects", "Personal Projects"];
 
 export default function Projects() {
-  const [showDetail, setShowDetail] = useState(false);
-  const [idDetail, setIdDetail] = useState("");
+  const [active, setActiveShowDefault] = useState("Professional Projects");
+  const [indexProject, setIndexProject] = useState(0);
 
-  const handleShowDetailProject = (id) => {
-    setShowDetail(true);
-    setIdDetail(`${id}`);
+  const isProfessionalProject = active === projects[0];
+  const data = isProfessionalProject ? professionalProjects : personalProjects;
+
+  const handleChangeProject = (projectName) => {
+    setActiveShowDefault(projectName);
+    setIndexProject(0);
   };
 
+  const handleChangeSubProject = (action) => {
+    setIndexProject((prev) => {
+      if (action === "next" && prev < data.length - 1) return prev + 1;
+      if (action === "prev" && prev > 0) return prev - 1;
+      return prev;
+    });
+  };
+
+  const renderProjects = useMemo(() => {
+    const current = data[indexProject];
+    return <ProjectDetailCard name={current.name} pic={current.pic} desc={current.desc} icons={current.icons} links={current.links} isPotrait={current.isPotrait} link={current.link} />;
+  }, [indexProject, data]);
+
   return (
-    <div className={`${showDetail ? "h-[975px]" : "h-fits"} py-10 mb-20`}>
-      <div className="flex justify-center">
-        <h1 className="mt-10 text-[40px] mb-20 font-semibold">Projects</h1>
-      </div>
+    <div className={`py-10 w-full`}>
+      <h1 className="my-10 text-[40px] font-semibold text-center">Projects</h1>
 
-      <div className="flex justify-between">
-        <div className={`grid ${showDetail ? "grid-rows-4" : "grid-cols-3"}   ${showDetail ? "mx-20" : "ml-[250px]"} ${showDetail ? "gap-3" : "gap-x-8"} `}>
-          {projects.map((item, i) => {
-            return (
-              <div>
-                <div
-                  key={i}
-                  id={item.id}
-                  className={`mt-10 hover:bg-[#a934dc] bg-[#a934dc] w-[350px] px-5 py-3 rounded-[5px] ${idDetail === `${item.id}` ? "bg-[#a934dc]" : "bg-transparent"}`}
-                  role="button"
-                  onClick={() => handleShowDetailProject(item.id)}
-                >
-                  <h1>{item.name}</h1>
-                </div>
-
-                {idDetail === `${item.id}` && showDetail ? (
-                  <ProjectDetailModal className="mr-[100px] w-[850px] h-[850px] z-10 px-3 -mt-[1400px]  ml-[550px]" name={item.name} pics={item.pics} desc={item.desc} link={item.link} icons={item.icons} />
-                ) : null}
+      <div className="mx-10">
+        <div className="border border-transparent backdrop-blur-md bg-white/10 rounded-[10px] p-4 h-[600px]">
+          <div className="flex justify-end">
+            {projects.map((project) => (
+              <div key={project} className={`my-2 border border-transparent cursor-pointer ${active === project ? "text-[#a934dc] font-bold" : ""} p-4 mx-auto rounded-2xl`} onClick={() => handleChangeProject(project)}>
+                <p className="text-center">{project}</p>
               </div>
-            );
-          })}
+            ))}
+          </div>
+          <div className="pb-20">{renderProjects}</div>
+        </div>
+        <div className="flex justify-center gap-10 mt-4">
+          <button onClick={() => handleChangeSubProject("prev")} disabled={indexProject === 0} className={`px-4 py-2 rounded bg-white/20 hover:bg-white/30 transition ${indexProject === 0 ? "opacity-50 cursor-not-allowed" : ""}`}>
+            Previous
+          </button>
+          <button
+            onClick={() => handleChangeSubProject("next")}
+            disabled={indexProject === data.length - 1}
+            className={`px-4 py-2 rounded bg-white/20 hover:bg-white/30 transition ${indexProject === data.length - 1 ? "opacity-50 cursor-not-allowed" : ""}`}
+          >
+            Next
+          </button>
         </div>
       </div>
     </div>

@@ -15,12 +15,12 @@ import GitlabIcon from "@hanawidyatari/icons/projectIcons/GitlabIcon";
 import GitIcon from "@hanawidyatari/icons/projectIcons/Git";
 import HtmlIcon from "@hanawidyatari/icons/projectIcons/HtmlIcon";
 import EjsIcon from "@hanawidyatari/icons/projectIcons/EjsIcon";
-import GithubIcon from "@hanawidyatari/icons/projectIcons/GithubIcon";
 import BootstrapIcon from "@hanawidyatari/icons/projectIcons/BootstrapIcon";
 import VrIcon from "@hanawidyatari/icons/projectIcons/VrIcon";
 import GraphqlIcon from "@hanawidyatari/icons/projectIcons/GraphqlIcon";
 import GitHubIcon from "@hanawidyatari/icons/projectIcons/GithubIcon";
 import TypescriptIcon from "@hanawidyatari/icons/projectIcons/TypescriptIcon";
+import JestIcon from "@hanawidyatari/icons/projectIcons/JestIcon";
 
 export const phoneBookContacts = [
   {
@@ -304,7 +304,7 @@ export const todoIconTech = [
     id: 11,
     iconHtml: (
       <div>
-        <GithubIcon height={30} width={30} className="cursor-pointer" />
+        <GitHubIcon height={30} width={30} className="cursor-pointer" />
       </div>
     ),
   },
@@ -402,7 +402,7 @@ export const traditionalGame = [
     id: 12,
     iconHtml: (
       <div>
-        <GithubIcon height={30} width={30} className="cursor-pointer" />
+        <GitHubIcon height={30} width={30} className="cursor-pointer" />
       </div>
     ),
   },
@@ -452,7 +452,7 @@ export const bukulapakIconTech = [
     id: 6,
     iconHtml: (
       <div>
-        <GithubIcon height={30} width={30} className="cursor-pointer" />
+        <GitHubIcon height={30} width={30} className="cursor-pointer" />
       </div>
     ),
   },
@@ -463,6 +463,130 @@ export const vrGis = [
     iconHtml: (
       <div>
         <VrIcon height={30} width={30} />
+      </div>
+    ),
+  },
+];
+export const personalWebsite = [
+  {
+    id: 0,
+    iconHtml: (
+      <div>
+        <JavascriptIcon height={30} width={30} fill="#facc15" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 1,
+    iconHtml: (
+      <div>
+        <ReactIcon height={30} width={30} fill="#61dafb" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    iconHtml: (
+      <div>
+        <TailwindIcon height={30} width={30} fill="#2dd4bf" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    iconHtml: (
+      <div>
+        <GitIcon height={30} width={30} className="cursor-pointer" />
+      </div>
+    ),
+  },
+];
+export const BroomIdTech = [
+  {
+    id: 1,
+    iconHtml: (
+      <div>
+        <TypescriptIcon height={30} width={30} fill="#facc15" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    iconHtml: (
+      <div>
+        <ReactIcon height={30} width={30} fill="#61dafb" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    iconHtml: (
+      <div>
+        <NextIcon height={30} width={30} />
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    iconHtml: (
+      <div>
+        <ReduxIcon height={30} width={30} fill="#6366f1" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    iconHtml: (
+      <div>
+        <AxiosIcon height={35} width={35} className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 8,
+    iconHtml: (
+      <div>
+        <TailwindIcon height={30} width={30} fill="#2dd4bf" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 10,
+    iconHtml: (
+      <div>
+        <PostgreIcon height={30} width={30} className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 12,
+    iconHtml: (
+      <div>
+        <PostmanIcon height={30} width={30} className="cursor-pointer" fill="#f97316" />
+      </div>
+    ),
+  },
+  {
+    id: 13,
+    iconHtml: (
+      <div>
+        <GitHubIcon height={30} width={30} className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 14,
+    iconHtml: (
+      <div>
+        <GitIcon height={30} width={30} className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 15,
+    iconHtml: (
+      <div>
+        <JestIcon height={30} width={30} className="cursor-pointer" />
       </div>
     ),
   },
