@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@hanawidyatari/pages/*": ["pages/*"],
+      "@hanawidyatari/components/*": ["components/*"],
+      "@hanawidyatari/utils/*": ["utility/*"],
+      "@hanawidyatari/styles/*": ["styles/*"],
+      "@hanawidyatari/icons/*": ["icons/*"]
+    }
+  },
+  "include": ["src"],
+  "checkJs": true,
+  "jsx": "preserve"
+}
