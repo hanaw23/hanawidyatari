@@ -5,12 +5,12 @@ export default function AboutMePage() {
         <h1 className="mt-10 text-[40px] font-semibold">About Me</h1>
       </div>
       <div className="flex flex-1 flex-col justify-center text-center lg:text-justify pb-20 px-[20%]">
-        <h3 className="text-[20px] py-3">Hello, I am Hana Widyatari 👋</h3>
+        <h3 className="text-[20px] py-3">Hello, I'm Hana Widyatari 👋</h3>
         <hr className="dark:border-gray-50 border-gray-900" />
 
         <p className="mt-2 lg:px-5  text-justify">
-          a Frontend Developer with 2 years of experience building web and mobile apps. I Started my journey through a coding bootcamp and have worked on both team and solo projects. Proficient in React, Vue, and React Native to create
-          user-friendly and functional applications. I’m always excited to learn more and take on new challenges.
+          A Frontend Developer with 2 years of experience building web and mobile applications. I began my journey through a coding bootcamp and have worked on both team-based and solo projects. Proficient in React, Vue, and React Native, I
+          create user-friendly and functional applications. I’m always excited to learn new things and take on new challenges.
         </p>
 
         <div className="mt-6">
