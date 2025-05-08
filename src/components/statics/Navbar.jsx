@@ -1,9 +1,7 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
-import LightIcon from "@hanawidyatari/icons/LightIcon";
-import DarkIcon from "@hanawidyatari/icons/DarkIcon";
-import DetailHover from "@hanawidyatari/components/hovers/DetailHover";
+import ThemeToggle from "@hanawidyatari/components/toggles/ThemeToggle";
 import { navbar } from "@hanawidyatari/utils/navbarList";
 
 const Navbar = () => {
@@ -11,7 +9,9 @@ const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const [isHover, setIsHover] = useState(false);
   const [show, setShow] = useState(true);
+  const [activeLink, setActiveLink] = useState("");
 
+  // This function is to control show and unshow navbar (deprecated)
   const controlNavbar = () => {
     if (window.scrollY > 50) {
       setShow(false);
@@ -20,18 +20,19 @@ const Navbar = () => {
     }
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => window.addEventListener("scroll", controlNavbar);
+  }, []);
+
   const smoothScroll = (link) => {
+    setActiveLink(link);
     const element = document.getElementById(link.slice(1));
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       window.history.pushState(null, "", link);
     }
   };
-
-  useEffect(() => {
-    window.addEventListener("scroll", controlNavbar);
-    return () => window.addEventListener("scroll", controlNavbar);
-  }, []);
 
   useEffect(() => {
     setMounted(true);
@@ -43,25 +44,19 @@ const Navbar = () => {
     const currentTheme = theme === "system" ? systemTheme : theme;
     const isDarkTheme = currentTheme === "dark";
 
-    const iconTheme = (
-      <div className="flex flex-col px-2">
-        {isDarkTheme ? (
-          <LightIcon role="button" onClick={() => setTheme("light")} height={20} width={20} className="fill-gray-50" hover={() => setIsHover(true)} leave={() => setIsHover(!isHover)} />
-        ) : (
-          <DarkIcon role="button" onClick={() => setTheme("dark")} height={20} width={20} className="fill-gray-50" hover={() => setIsHover(true)} leave={() => setIsHover(!isHover)} />
-        )}
-      </div>
-    );
+    const handleToggle = () => {
+      setTheme(isDarkTheme ? "light" : "dark");
+    };
 
-    return <DetailHover icon={iconTheme} detail={isDarkTheme ? "Light" : "Dark"} onHover={isHover} classNameDiv="flex flex-col w-[50px] h-[50px]" classNameDetail="w-fit -mt-3 ml-[18px]" />;
+    return <ThemeToggle isDarkTheme={isDarkTheme} onChange={handleToggle} />;
   };
 
   return (
-    <div className={` ${show ? "fixed" : "hidden"} z-50`}>
-      <div className="backdrop-blur-md bg-white/6 text-gray-50 w-screen h-[58px] flex justify-around py-4 active ">
+    <div className={`fixed z-50`}>
+      <div className="backdrop-blur-md dark:bg-gray-800/30 bg-white/20 text-gray-50 w-screen h-[58px] flex justify-around py-4 active ">
         <div className="flex gap-2">
           <div className="flex">
-            <h1 className="font-bold text-lg">Hana</h1>
+            <h1 className="font-bold text-lg dark:text-white text-gray-900">Hana</h1>
             <span className="font-bold text-lg text-orange-500">W</span>
           </div>
           <span height={10} width={10}>
@@ -70,9 +65,11 @@ const Navbar = () => {
         </div>
         <div className="ml-40 flex gap-16">
           {navbar.map((item, i) => {
+            const isActive = item.link === activeLink;
+
             return (
-              <ul className="text-sm" key={i}>
-                <li className="cursor-pointer hover:text-[#d992f7]" onClick={() => smoothScroll(item.link)}>
+              <ul className="text-sm dark:text-white text-gray-900" key={i}>
+                <li className={`cursor-pointer hover:text-[#d992f7] ${isActive ? "text-[#d992f7] font-semibold text-base" : ""}`} onClick={() => smoothScroll(item.link)}>
                   {item.name}
                 </li>
               </ul>

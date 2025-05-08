@@ -9,8 +9,8 @@ export default function AboutMePage() {
         <hr className="dark:border-gray-50 border-gray-900" />
 
         <p className="mt-2 lg:px-5  text-justify">
-          a Frontend Developer with 2 years of experience building web and mobile apps. I started my journey through a coding bootcamp and have worked on both team and solo projects. I use React, Vue, and React Native to create
-          user-friendly, functional applications. I’m always excited to learn more and take on new challenges
+          a Frontend Developer with 2 years of experience building web and mobile apps. I Started my journey through a coding bootcamp and have worked on both team and solo projects. Proficient in React, Vue, and React Native to create
+          user-friendly and functional applications. I’m always excited to learn more and take on new challenges.
         </p>
 
         <div className="mt-6">

@@ -27,7 +27,7 @@ export const phoneBookContacts = [
     id: 1,
     iconHtml: (
       <div>
-        <TypescriptIcon height={30} width={30} fill="#facc15" className="cursor-pointer" />
+        <TypescriptIcon height={20} width={20} fill="#facc15" className="cursor-pointer" />
       </div>
     ),
   },
@@ -35,7 +35,7 @@ export const phoneBookContacts = [
     id: 2,
     iconHtml: (
       <div>
-        <CssIcon height={30} width={30} className="cursor-pointer" />
+        <CssIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -43,7 +43,7 @@ export const phoneBookContacts = [
     id: 4,
     iconHtml: (
       <div>
-        <ReactIcon height={30} width={30} fill="#61dafb" className="cursor-pointer" />
+        <ReactIcon height={20} width={20} fill="#61dafb" className="cursor-pointer" />
       </div>
     ),
   },
@@ -51,7 +51,7 @@ export const phoneBookContacts = [
     id: 5,
     iconHtml: (
       <div>
-        <NextIcon height={30} width={30} />
+        <NextIcon height={20} width={20} />
       </div>
     ),
   },
@@ -59,7 +59,7 @@ export const phoneBookContacts = [
     id: 6,
     iconHtml: (
       <div>
-        <GraphqlIcon height={30} width={30} fill="#6366f1" className="cursor-pointer" />
+        <GraphqlIcon height={20} width={20} fill="#6366f1" className="cursor-pointer" />
       </div>
     ),
   },
@@ -67,7 +67,7 @@ export const phoneBookContacts = [
     id: 12,
     iconHtml: (
       <div>
-        <PostmanIcon height={30} width={30} className="cursor-pointer" fill="#f97316" />
+        <PostmanIcon height={20} width={20} className="cursor-pointer" fill="#f97316" />
       </div>
     ),
   },
@@ -75,7 +75,7 @@ export const phoneBookContacts = [
     id: 13,
     iconHtml: (
       <div>
-        <GitHubIcon height={30} width={30} className="cursor-pointer" />
+        <GitHubIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -83,7 +83,7 @@ export const phoneBookContacts = [
     id: 14,
     iconHtml: (
       <div>
-        <GitIcon height={30} width={30} className="cursor-pointer" />
+        <GitIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -91,7 +91,7 @@ export const phoneBookContacts = [
     id: 15,
     iconHtml: (
       <div>
-        <VercelIcon height={30} width={30} />
+        <VercelIcon height={20} width={20} />
       </div>
     ),
   },
@@ -101,7 +101,7 @@ export const myStoreIconTech = [
     id: 1,
     iconHtml: (
       <div>
-        <JavascriptIcon height={30} width={30} fill="#facc15" className="cursor-pointer" />
+        <JavascriptIcon height={20} width={20} fill="#facc15" className="cursor-pointer" />
       </div>
     ),
   },
@@ -109,7 +109,7 @@ export const myStoreIconTech = [
     id: 2,
     iconHtml: (
       <div>
-        <CssIcon height={30} width={30} className="cursor-pointer" />
+        <CssIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -117,7 +117,7 @@ export const myStoreIconTech = [
     id: 3,
     iconHtml: (
       <div>
-        <NodeIcon height={30} width={30} fill="#539e43" className="cursor-pointer" />
+        <NodeIcon height={20} width={20} fill="#539e43" className="cursor-pointer" />
       </div>
     ),
   },
@@ -125,7 +125,7 @@ export const myStoreIconTech = [
     id: 4,
     iconHtml: (
       <div>
-        <ReactIcon height={30} width={30} fill="#61dafb" className="cursor-pointer" />
+        <ReactIcon height={20} width={20} fill="#61dafb" className="cursor-pointer" />
       </div>
     ),
   },
@@ -133,7 +133,7 @@ export const myStoreIconTech = [
     id: 5,
     iconHtml: (
       <div>
-        <NextIcon height={30} width={30} />
+        <NextIcon height={20} width={20} />
       </div>
     ),
   },
@@ -141,7 +141,7 @@ export const myStoreIconTech = [
     id: 6,
     iconHtml: (
       <div>
-        <ReduxIcon height={30} width={30} fill="#6366f1" className="cursor-pointer" />
+        <ReduxIcon height={20} width={20} fill="#6366f1" className="cursor-pointer" />
       </div>
     ),
   },
@@ -149,7 +149,7 @@ export const myStoreIconTech = [
     id: 7,
     iconHtml: (
       <div>
-        <AxiosIcon height={35} width={35} className="cursor-pointer" />
+        <AxiosIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -157,7 +157,7 @@ export const myStoreIconTech = [
     id: 8,
     iconHtml: (
       <div>
-        <TailwindIcon height={30} width={30} fill="#2dd4bf" className="cursor-pointer" />
+        <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
       </div>
     ),
   },
@@ -166,7 +166,7 @@ export const myStoreIconTech = [
     id: 9,
     iconHtml: (
       <div>
-        <ExpressIcon height={35} width={35} />
+        <ExpressIcon height={20} width={20} />
       </div>
     ),
   },
@@ -174,7 +174,7 @@ export const myStoreIconTech = [
     id: 10,
     iconHtml: (
       <div>
-        <PostgreIcon height={30} width={30} className="cursor-pointer" />
+        <PostgreIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -182,7 +182,7 @@ export const myStoreIconTech = [
     id: 11,
     iconHtml: (
       <div>
-        <SwaggerIcon height={30} width={30} className="cursor-pointer" />
+        <SwaggerIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -190,7 +190,7 @@ export const myStoreIconTech = [
     id: 12,
     iconHtml: (
       <div>
-        <PostmanIcon height={30} width={30} className="cursor-pointer" fill="#f97316" />
+        <PostmanIcon height={20} width={20} className="cursor-pointer" fill="#f97316" />
       </div>
     ),
   },
@@ -198,7 +198,7 @@ export const myStoreIconTech = [
     id: 13,
     iconHtml: (
       <div>
-        <GitlabIcon height={30} width={30} className="cursor-pointer" />
+        <GitlabIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -206,7 +206,7 @@ export const myStoreIconTech = [
     id: 14,
     iconHtml: (
       <div>
-        <GitIcon height={30} width={30} className="cursor-pointer" />
+        <GitIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -214,7 +214,7 @@ export const myStoreIconTech = [
     id: 15,
     iconHtml: (
       <div>
-        <VercelIcon height={30} width={30} />
+        <VercelIcon height={20} width={20} />
       </div>
     ),
   },
@@ -224,7 +224,7 @@ export const todoIconTech = [
     id: 1,
     iconHtml: (
       <div>
-        <JavascriptIcon height={30} width={30} fill="#facc15" className="cursor-pointer" />
+        <JavascriptIcon height={20} width={20} fill="#facc15" className="cursor-pointer" />
       </div>
     ),
   },
@@ -232,7 +232,7 @@ export const todoIconTech = [
     id: 2,
     iconHtml: (
       <div>
-        <HtmlIcon height={30} width={30} className="cursor-pointer" />
+        <HtmlIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -240,7 +240,7 @@ export const todoIconTech = [
     id: 3,
     iconHtml: (
       <div>
-        <CssIcon height={30} width={30} className="cursor-pointer" />
+        <CssIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -248,7 +248,7 @@ export const todoIconTech = [
     id: 4,
     iconHtml: (
       <div>
-        <EjsIcon height={30} width={30} className="cursor-pointer" />
+        <EjsIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -256,7 +256,7 @@ export const todoIconTech = [
     id: 5,
     iconHtml: (
       <div>
-        <NodeIcon height={30} width={30} fill="#539e43" className="cursor-pointer" />
+        <NodeIcon height={20} width={20} fill="#539e43" className="cursor-pointer" />
       </div>
     ),
   },
@@ -264,7 +264,7 @@ export const todoIconTech = [
     id: 6,
     iconHtml: (
       <div>
-        <ExpressIcon height={35} width={35} />
+        <ExpressIcon height={20} width={20} />
       </div>
     ),
   },
@@ -272,7 +272,7 @@ export const todoIconTech = [
     id: 7,
     iconHtml: (
       <div>
-        <PostgreIcon height={30} width={30} className="cursor-pointer" />
+        <PostgreIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -280,7 +280,7 @@ export const todoIconTech = [
     id: 8,
     iconHtml: (
       <div>
-        <SwaggerIcon height={30} width={30} className="cursor-pointer" />
+        <SwaggerIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -288,7 +288,7 @@ export const todoIconTech = [
     id: 9,
     iconHtml: (
       <div>
-        <PostmanIcon height={30} width={30} className="cursor-pointer" fill="#f97316" />
+        <PostmanIcon height={20} width={20} className="cursor-pointer" fill="#f97316" />
       </div>
     ),
   },
@@ -296,7 +296,7 @@ export const todoIconTech = [
     id: 10,
     iconHtml: (
       <div>
-        <GitIcon height={30} width={30} className="cursor-pointer" />
+        <GitIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -304,7 +304,7 @@ export const todoIconTech = [
     id: 11,
     iconHtml: (
       <div>
-        <GitHubIcon height={30} width={30} className="cursor-pointer" />
+        <GitHubIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -314,7 +314,7 @@ export const traditionalGame = [
     id: 1,
     iconHtml: (
       <div>
-        <JavascriptIcon height={30} width={30} fill="#facc15" className="cursor-pointer" />
+        <JavascriptIcon height={20} width={20} fill="#facc15" className="cursor-pointer" />
       </div>
     ),
   },
@@ -322,7 +322,7 @@ export const traditionalGame = [
     id: 2,
     iconHtml: (
       <div>
-        <HtmlIcon height={30} width={30} className="cursor-pointer" />
+        <HtmlIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -330,7 +330,7 @@ export const traditionalGame = [
     id: 3,
     iconHtml: (
       <div>
-        <CssIcon height={30} width={30} className="cursor-pointer" />
+        <CssIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -338,7 +338,7 @@ export const traditionalGame = [
     id: 4,
     iconHtml: (
       <div>
-        <EjsIcon height={30} width={30} className="cursor-pointer" />
+        <EjsIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -346,7 +346,7 @@ export const traditionalGame = [
     id: 5,
     iconHtml: (
       <div>
-        <BootstrapIcon height={30} width={30} className="cursor-pointer" />
+        <BootstrapIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -354,7 +354,7 @@ export const traditionalGame = [
     id: 6,
     iconHtml: (
       <div>
-        <NodeIcon height={30} width={30} fill="#539e43" className="cursor-pointer" />
+        <NodeIcon height={20} width={20} fill="#539e43" className="cursor-pointer" />
       </div>
     ),
   },
@@ -362,7 +362,7 @@ export const traditionalGame = [
     id: 7,
     iconHtml: (
       <div>
-        <ExpressIcon height={35} width={35} />
+        <ExpressIcon height={20} width={20} />
       </div>
     ),
   },
@@ -370,7 +370,7 @@ export const traditionalGame = [
     id: 8,
     iconHtml: (
       <div>
-        <PostgreIcon height={30} width={30} className="cursor-pointer" />
+        <PostgreIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -378,7 +378,7 @@ export const traditionalGame = [
     id: 9,
     iconHtml: (
       <div>
-        <SwaggerIcon height={30} width={30} className="cursor-pointer" />
+        <SwaggerIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -386,7 +386,7 @@ export const traditionalGame = [
     id: 10,
     iconHtml: (
       <div>
-        <PostmanIcon height={30} width={30} className="cursor-pointer" fill="#f97316" />
+        <PostmanIcon height={20} width={20} className="cursor-pointer" fill="#f97316" />
       </div>
     ),
   },
@@ -394,7 +394,7 @@ export const traditionalGame = [
     id: 11,
     iconHtml: (
       <div>
-        <GitIcon height={30} width={30} className="cursor-pointer" />
+        <GitIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -402,7 +402,7 @@ export const traditionalGame = [
     id: 12,
     iconHtml: (
       <div>
-        <GitHubIcon height={30} width={30} className="cursor-pointer" />
+        <GitHubIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -412,7 +412,7 @@ export const bukulapakIconTech = [
     id: 1,
     iconHtml: (
       <div>
-        <JavascriptIcon height={30} width={30} fill="#facc15" className="cursor-pointer" />
+        <JavascriptIcon height={20} width={20} fill="#facc15" className="cursor-pointer" />
       </div>
     ),
   },
@@ -420,7 +420,7 @@ export const bukulapakIconTech = [
     id: 2,
     iconHtml: (
       <div>
-        <HtmlIcon height={30} width={30} className="cursor-pointer" />
+        <HtmlIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -428,7 +428,7 @@ export const bukulapakIconTech = [
     id: 3,
     iconHtml: (
       <div>
-        <CssIcon height={30} width={30} className="cursor-pointer" />
+        <CssIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -436,7 +436,7 @@ export const bukulapakIconTech = [
     id: 4,
     iconHtml: (
       <div>
-        <NodeIcon height={30} width={30} fill="#539e43" className="cursor-pointer" />
+        <NodeIcon height={20} width={20} fill="#539e43" className="cursor-pointer" />
       </div>
     ),
   },
@@ -444,7 +444,7 @@ export const bukulapakIconTech = [
     id: 5,
     iconHtml: (
       <div>
-        <GitIcon height={30} width={30} className="cursor-pointer" />
+        <GitIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -452,7 +452,7 @@ export const bukulapakIconTech = [
     id: 6,
     iconHtml: (
       <div>
-        <GitHubIcon height={30} width={30} className="cursor-pointer" />
+        <GitHubIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -462,7 +462,7 @@ export const vrGis = [
     id: 1,
     iconHtml: (
       <div>
-        <VrIcon height={30} width={30} />
+        <VrIcon height={20} width={20} />
       </div>
     ),
   },
@@ -472,7 +472,7 @@ export const personalWebsite = [
     id: 0,
     iconHtml: (
       <div>
-        <JavascriptIcon height={30} width={30} fill="#facc15" className="cursor-pointer" />
+        <JavascriptIcon height={20} width={20} fill="#facc15" className="cursor-pointer" />
       </div>
     ),
   },
@@ -480,7 +480,7 @@ export const personalWebsite = [
     id: 1,
     iconHtml: (
       <div>
-        <ReactIcon height={30} width={30} fill="#61dafb" className="cursor-pointer" />
+        <ReactIcon height={20} width={20} fill="#61dafb" className="cursor-pointer" />
       </div>
     ),
   },
@@ -488,7 +488,7 @@ export const personalWebsite = [
     id: 2,
     iconHtml: (
       <div>
-        <TailwindIcon height={30} width={30} fill="#2dd4bf" className="cursor-pointer" />
+        <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
       </div>
     ),
   },
@@ -496,7 +496,15 @@ export const personalWebsite = [
     id: 3,
     iconHtml: (
       <div>
-        <GitIcon height={30} width={30} className="cursor-pointer" />
+        <GitIcon height={20} width={20} className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 13,
+    iconHtml: (
+      <div>
+        <GitHubIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -506,7 +514,7 @@ export const BroomIdTech = [
     id: 1,
     iconHtml: (
       <div>
-        <TypescriptIcon height={30} width={30} fill="#facc15" className="cursor-pointer" />
+        <TypescriptIcon height={20} width={20} fill="#facc15" className="cursor-pointer" />
       </div>
     ),
   },
@@ -514,7 +522,7 @@ export const BroomIdTech = [
     id: 4,
     iconHtml: (
       <div>
-        <ReactIcon height={30} width={30} fill="#61dafb" className="cursor-pointer" />
+        <ReactIcon height={20} width={20} fill="#61dafb" className="cursor-pointer" />
       </div>
     ),
   },
@@ -522,7 +530,7 @@ export const BroomIdTech = [
     id: 5,
     iconHtml: (
       <div>
-        <NextIcon height={30} width={30} />
+        <NextIcon height={20} width={20} />
       </div>
     ),
   },
@@ -530,7 +538,7 @@ export const BroomIdTech = [
     id: 6,
     iconHtml: (
       <div>
-        <ReduxIcon height={30} width={30} fill="#6366f1" className="cursor-pointer" />
+        <ReduxIcon height={20} width={20} fill="#6366f1" className="cursor-pointer" />
       </div>
     ),
   },
@@ -538,7 +546,7 @@ export const BroomIdTech = [
     id: 7,
     iconHtml: (
       <div>
-        <AxiosIcon height={35} width={35} className="cursor-pointer" />
+        <AxiosIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -546,7 +554,7 @@ export const BroomIdTech = [
     id: 8,
     iconHtml: (
       <div>
-        <TailwindIcon height={30} width={30} fill="#2dd4bf" className="cursor-pointer" />
+        <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
       </div>
     ),
   },
@@ -554,7 +562,7 @@ export const BroomIdTech = [
     id: 10,
     iconHtml: (
       <div>
-        <PostgreIcon height={30} width={30} className="cursor-pointer" />
+        <PostgreIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -562,7 +570,7 @@ export const BroomIdTech = [
     id: 12,
     iconHtml: (
       <div>
-        <PostmanIcon height={30} width={30} className="cursor-pointer" fill="#f97316" />
+        <PostmanIcon height={20} width={20} className="cursor-pointer" fill="#f97316" />
       </div>
     ),
   },
@@ -570,7 +578,7 @@ export const BroomIdTech = [
     id: 13,
     iconHtml: (
       <div>
-        <GitHubIcon height={30} width={30} className="cursor-pointer" />
+        <GitHubIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -578,7 +586,7 @@ export const BroomIdTech = [
     id: 14,
     iconHtml: (
       <div>
-        <GitIcon height={30} width={30} className="cursor-pointer" />
+        <GitIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },
@@ -586,7 +594,7 @@ export const BroomIdTech = [
     id: 15,
     iconHtml: (
       <div>
-        <JestIcon height={30} width={30} className="cursor-pointer" />
+        <JestIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },

@@ -18,8 +18,8 @@ export default function ScrollProgress() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
-    <div className="h-[5px] w-screen bg-transparent fixed z-40">
-      <div className={`h-[5px] bg-gradient-to-r from-[#b01436] via-[#a809ab] to-[#1365d1]`} style={{ width: `${scrollTop}%` }}></div>
+    <div className="fixed top-0 left-0 h-[5px] w-screen bg-transparent z-[1000]">
+      <div className="h-[5px] bg-gradient-to-r from-[#b01436] via-[#a809ab] to-[#1365d1]" style={{ width: `${scrollTop}%` }} />
     </div>
   );
 }
