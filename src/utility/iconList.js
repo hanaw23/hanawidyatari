@@ -21,6 +21,7 @@ import GraphqlIcon from "@hanawidyatari/icons/projectIcons/GraphqlIcon";
 import GitHubIcon from "@hanawidyatari/icons/projectIcons/GithubIcon";
 import TypescriptIcon from "@hanawidyatari/icons/projectIcons/TypescriptIcon";
 import JestIcon from "@hanawidyatari/icons/projectIcons/JestIcon";
+import PWAIcon from "@hanawidyatari/icons/projectIcons/PwaIcon";
 
 export const phoneBookContacts = [
   {
@@ -595,6 +596,80 @@ export const BroomIdTech = [
     iconHtml: (
       <div>
         <JestIcon height={20} width={20} className="cursor-pointer" />
+      </div>
+    ),
+  },
+];
+export const RecipeApp = [
+  {
+    id: 1,
+    iconHtml: (
+      <div>
+        <TypescriptIcon height={20} width={20} fill="#facc15" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    iconHtml: (
+      <div>
+        <ReactIcon height={20} width={20} fill="#61dafb" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    iconHtml: (
+      <div>
+        <NextIcon height={20} width={20} />
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    iconHtml: (
+      <div>
+        <ReduxIcon height={20} width={20} fill="#6366f1" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    iconHtml: (
+      <div>
+        <AxiosIcon height={20} width={20} className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 8,
+    iconHtml: (
+      <div>
+        <TailwindIcon height={20} width={20} fill="#2dd4bf" className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 13,
+    iconHtml: (
+      <div>
+        <GitHubIcon height={20} width={20} className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 14,
+    iconHtml: (
+      <div>
+        <GitIcon height={20} width={20} className="cursor-pointer" />
+      </div>
+    ),
+  },
+  {
+    id: 15,
+    iconHtml: (
+      <div>
+        <PWAIcon height={20} width={20} className="cursor-pointer" />
       </div>
     ),
   },

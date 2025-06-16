@@ -1,8 +1,18 @@
-import { myStoreIconTech, todoIconTech, traditionalGame, bukulapakIconTech, vrGis, phoneBookContacts, personalWebsite, BroomIdTech } from "@hanawidyatari/utils/iconList";
+import { myStoreIconTech, todoIconTech, traditionalGame, bukulapakIconTech, vrGis, phoneBookContacts, personalWebsite, BroomIdTech, RecipeApp } from "@hanawidyatari/utils/iconList";
 import AndoridIcon from "@hanawidyatari/icons/projectIcons/AndroidIcon";
 import IosIcon from "@hanawidyatari/icons/projectIcons/IosIcon";
 
 export const personalProjects = [
+  {
+    id: "RecipeApp",
+    name: "Recipe App",
+    link: {
+      url: "https://recipe-app-kappa-seven.vercel.app/",
+    },
+    pic: "assets/images/Recipe-app.png",
+    desc: "Recipe App is a web-based cooking recipe application that supports Progressive Web App (PWA) technology. This allows users to install the app directly on their computers or mobile devices without needing to go through the Play Store or App Store, making it easier and more convenient to access. The app is developed using React with Next.js for the frontend, and Redux is used for managing API state and data flow.",
+    icons: RecipeApp,
+  },
   {
     id: "PersonalWeb",
     name: "Personal Website",
@@ -53,13 +63,6 @@ export const personalProjects = [
     pic: "assets/images/binar-game1.jpg",
     desc: "If the user wins then the score will add 10 points but when computer wins, user will lose 5 points from their current points and there's no addition or subtraction for a draw condition. When the heart bar turn into black three times so the game is over.",
     icons: traditionalGame,
-  },
-  {
-    id: "Bukulapak",
-    name: "Bukulapak E-commerce",
-    pic: "assets/images/H8_P1.png",
-    desc: "Present for users to buy books easily. The home page of the website shows every new books that recently added from admin and also users can see the review from stars rate. Our website provides many kind of book such as comics, novels, medical, etc. If users have decided to buy the books, the cart page appear to count your total amount of the books that user want to buy.",
-    icons: bukulapakIconTech,
   },
   {
     id: "VR",
