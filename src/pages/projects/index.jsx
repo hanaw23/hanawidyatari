@@ -1,25 +1,16 @@
 import { useState, useMemo } from "react";
-import { personalProjects, professionalProjects } from "@hanawidyatari/utils/projectsList";
+import { projects } from "@hanawidyatari/utils/projectsList";
 import ProjectCard from "@hanawidyatari/components/cards/ProjectCard";
 import ProjectDetailCard from "@hanawidyatari/components/cards/ProjectDetailCard";
 
-const projects = ["Professional Projects", "Personal Projects"];
-
 export default function Projects() {
-  const [active, setActiveShowDefault] = useState("Professional Projects");
   const [indexProject, setIndexProject] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const isProfessionalProject = active === projects[0];
-  const data = isProfessionalProject ? professionalProjects : personalProjects;
+  const data = projects;
   const isDataMoreThanOne = data.length > 1;
   const isCurrentLastData = indexProject === data.length - 1;
   const isCurrentFirstData = indexProject === 0;
-
-  const handleChangeProject = (projectName) => {
-    setActiveShowDefault(projectName);
-    setIndexProject(0);
-  };
 
   const handleChangeSubProject = (action) => {
     if (isTransitioning) return;
@@ -47,11 +38,11 @@ export default function Projects() {
         links={current.links}
         isPotrait={current.isPotrait}
         link={current.link}
+        isDataMoreThanOne={isDataMoreThanOne}
         backToPrevious={() => handleChangeSubProject("prev")}
         goToNext={() => handleChangeSubProject("next")}
         isFirstData={isCurrentFirstData}
         isLastData={isCurrentLastData}
-        isDataMoreThanOne={isDataMoreThanOne}
       />
     );
   }, [indexProject, data]);
@@ -61,16 +52,7 @@ export default function Projects() {
       <div className="x-4 lg:mx-10">
         <h1 className="mt-10 lg:mt-14 text-[40px] font-semibold text-center mb-8 lg:mb-14">Projects</h1>
 
-        <ProjectCard
-          projects={projects}
-          active={active}
-          handleChangeProject={handleChangeProject}
-          isTransitioning={isTransitioning}
-          renderProjects={renderProjects}
-          indexProject={indexProject}
-          data={data}
-          isDataMoreThanOne={isDataMoreThanOne}
-        />
+        <ProjectCard projects={projects} isTransitioning={isTransitioning} renderProjects={renderProjects} indexProject={indexProject} data={data} isDataMoreThanOne={isDataMoreThanOne} />
       </div>
     </div>
   );

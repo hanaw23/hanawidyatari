@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import AndoridIcon from "@hanawidyatari/icons/projectIcons/AndroidIcon";
 import BackIcon from "@hanawidyatari/icons/BackIcon";
 import NextIcon from "@hanawidyatari/icons/NextIcon";
@@ -8,39 +9,66 @@ const ProjectDetailCard = (props) => {
   const isShowNextButton = props.isDataMoreThanOne && !props.isLastData;
 
   return (
-    <div className="mt-8 lg:mt-6 relative">
-      {/* Back Button */}
-      {isShowBackButton && (
-        <div className="absolute left-1 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full dark:bg-black/30 bg-white/30 hover:bg-white/50 dark:hover:bg-black/50  transition duration-200 cursor-pointer" onClick={() => props.backToPrevious()}>
-          <BackIcon />
-        </div>
-      )}
+    <div className="mt-6 lg:mt-4 relative">
+      {/* Navigation Buttons */}
+      <div className="flex justify-end gap-4 items-center px-4 lg:px-6 mb-4">
+        {/* Back Button */}
+        {isShowBackButton ? (
+          <div className="p-3 rounded-full dark:bg-black/30 bg-white/30 hover:bg-white/50 dark:hover:bg-black/50 backdrop-blur-sm transition duration-200 cursor-pointer shadow-lg" onClick={() => props.backToPrevious()}>
+            <BackIcon />
+          </div>
+        ) : (
+          <div className="w-12" />
+        )}
+
+        {/* Next Button */}
+        {isShowNextButton ? (
+          <div className="p-3 rounded-full dark:bg-black/30 bg-white/30 hover:bg-white/50 dark:hover:bg-black/50 backdrop-blur-sm transition duration-200 cursor-pointer shadow-lg" onClick={() => props.goToNext()}>
+            <NextIcon />
+          </div>
+        ) : (
+          <div className="w-12" />
+        )}
+      </div>
 
       {/* Main Content Container */}
-      <h2 className="text-[20px] lg:text-[30px] font-bold dark:text-white mx-4 lg:mx-10">{props.name}</h2>
-      <div className="flex justify-between items-center mx-2 mt-4 lg:mx-4 lg:mt-6 gap-6 lg:gap-6">
+      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mx-2 lg:mx-4 gap-4 lg:gap-6 mt-2">
+        {/* Image Section */}
+        <div className="w-full lg:w-auto flex justify-center lg:justify-start">
+          <Image
+            src={props.pic}
+            height={400}
+            width={props.isPotrait ? 200 : 650}
+            className={`rounded-lg mt-4 lg:-mt-10  w-auto object-cover`}
+            alt="Picture of project"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL="/_next/image?url=/placeholder.jpg&w=16&q=1"
+          />
+        </div>
+
         {/* Info Section */}
-        <div className="flex-1 px-2 lg:px-6 overflow-y-auto overflow-x-hidden h-[350px] lg:h-full">
-          <div className="mt-4">
-            <h3 className="text-m font-semibold mb-2 dark:text-white">Description</h3>
-            <p className="text-justify text-sm">{props.desc}</p>
-          </div>
+        <div className="flex-1 w-full lg:w-auto px-4 lg:px-10 overflow-y-auto overflow-x-hidden max-h-[400px] lg:h-[550px]">
+          <h2 className="text-xl lg:text-3xl font-bold dark:text-white mb-4 ">{props.name}</h2>
+
+          <h3 className="text-base font-semibold mb-2 dark:text-white">Description</h3>
+          <p className="text-justify text-sm lg:text-base mb-4">{props.desc}</p>
 
           {props.link && (
-            <div className="mt-3 lg:mt-6">
-              <h3 className="text-m font-semibold mb-2 dark:text-white">Link Project</h3>
-              <a href={props.link.url} target="_blank" className="cursor-pointer">
-                <p className="dark:text-white font-semibold underline text-sm lg:text-base">Link to project</p>
+            <div className="mt-4 lg:mt-6">
+              <h3 className="text-base font-semibold mb-2 dark:text-white">Link Project</h3>
+              <a href={props.link.url} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                <p className="dark:text-white font-semibold underline text-sm lg:text-base hover:opacity-70 transition">Link to project</p>
               </a>
             </div>
           )}
 
           {props.links && (
-            <div className="mt-3 lg:mt-6">
-              <h3 className="text-m font-semibold mb-2 dark:text-white">Link Project</h3>
-              <div className="grid grid-cols-6 lg:grid-cols-10 gap-8 lg:gap-1">
+            <div className="mt-4 lg:mt-6">
+              <h3 className="text-base font-semibold mb-2 dark:text-white">Link Project</h3>
+              <div className="flex flex-wrap gap-4 lg:gap-6">
                 {props.links?.map((item, i) => (
-                  <a href={item.link} target="_blank" className="cursor-pointer -ml-10 lg:-ml-8" key={i}>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:opacity-70 transition" key={i}>
                     <div>{item.iconHtml}</div>
                   </a>
                 ))}
@@ -48,28 +76,18 @@ const ProjectDetailCard = (props) => {
             </div>
           )}
 
-          <div className="mt-3 lg:mt-6">
-            <h3 className="text-m font-semibold mb-2 dark:text-white">Technology</h3>
-            <div className="grid grid-cols-4 lg:grid-cols-6 mt-4">
+          <div className="mt-4 lg:mt-6">
+            <h3 className="text-base font-semibold mb-2 dark:text-white">Technology</h3>
+            <div className="grid grid-cols-4 lg:grid-cols-6 gap-4 mt-4">
               {props.icons?.map((icon, i) => (
-                <div key={i}>{icon.iconHtml}</div>
+                <div key={i} className="flex justify-center items-center">
+                  {icon.iconHtml}
+                </div>
               ))}
             </div>
           </div>
         </div>
-
-        {/* Image */}
-        <div className="flex-1 mt-6 lg:justify-center lg:flex lg:items-center">
-          <img src={props.pic} alt="alt" height={props.isPotrait ? 200 : 600} width={props.isPotrait ? 200 : 600} className={`${props.isPotrait ? "lg:-mt-20 " : "-mt-14"}`} />
-        </div>
       </div>
-
-      {/* Next Button */}
-      {isShowNextButton && (
-        <div className="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full dark:bg-black/30 bg-white/30 hover:bg-white/50 dark:hover:bg-black/50  transition duration-200 cursor-pointer" onClick={() => props.goToNext()}>
-          <NextIcon />
-        </div>
-      )}
     </div>
   );
 };
