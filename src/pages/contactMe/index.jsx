@@ -1,6 +1,6 @@
 import { contacts } from "@hanawidyatari/utils/contactsList";
 import Footer from "@hanawidyatari/components/statics/Footer";
-import LinkButton from "@hanawidyatari/components/buttons/LinkButton";
+import CustomButton from "@hanawidyatari/components/buttons/CustomButton";
 
 export default function ContactMePage() {
   return (
@@ -11,7 +11,7 @@ export default function ContactMePage() {
           <h3 className="font-semibold text-[24px] md:text-[30px] text-center">I am looking forward to start projects with you</h3>
           <p className="mt-6 text-center max-w-md mx-auto">Email me if you’re interested in hiring me for your project. I would be happy to join your team.</p>
           <div className="flex justify-center">
-            <LinkButton
+            <CustomButton
               children={
                 <a href="mailto:hanawidyatari@gmail.com" target="_blank" rel="noopener noreferrer">
                   <p className="px-10 py-3 font-semibold">EMAIL ME</p>

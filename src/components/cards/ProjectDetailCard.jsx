@@ -66,11 +66,7 @@ const ProjectDetailCard = (props) => {
 
       {/* Next Button */}
       {isShowNextButton && (
-        <div
-          className="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full dark:bg-black/30 bg-white/30 hover:bg-white/50 dark:hover:bg-black/50  transition duration-200 cursor-pointer"
-          onClick={() => props.goToNext()}
-          onClick={() => props.goToNext()}
-        >
+        <div className="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full dark:bg-black/30 bg-white/30 hover:bg-white/50 dark:hover:bg-black/50  transition duration-200 cursor-pointer" onClick={() => props.goToNext()}>
           <NextIcon />
         </div>
       )}

@@ -68,10 +68,6 @@ export const detailExp = [
         id: 8,
         iconHtml: <GitIcon height={20} width={20} className="cursor-pointer" />,
       },
-      {
-        id: 9,
-        iconHtml: <AxiosIcon height={25} width={25} className="cursor-pointer" />,
-      },
     ],
   },
   {
