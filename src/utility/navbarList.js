@@ -10,9 +10,9 @@ export const navbar = [
     link: "#aboutMe",
   },
   {
-    id: "experiences",
-    name: "Experiences",
-    link: "#experiences",
+    id: "experience",
+    name: "Experience",
+    link: "#experience",
   },
   {
     id: "projects",

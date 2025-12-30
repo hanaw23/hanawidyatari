@@ -6,6 +6,8 @@
       "@hanawidyatari/components/*": ["components/*"],
       "@hanawidyatari/utils/*": ["utility/*"],
       "@hanawidyatari/styles/*": ["styles/*"],
+      "@hanawidyatari/hooks": ["hooks/index.js"],
+      "@hanawidyatari/contexts": ["contexts/index.js"],
       "@hanawidyatari/icons/*": ["icons/*"]
     }
   },

@@ -5,7 +5,9 @@ import CustomButton from "@hanawidyatari/components/buttons/CustomButton";
 export default function ContactMePage() {
   return (
     <div className="z-20 py-5 lg:py-20 px-4">
-      <h1 className="mt-8 text-[32px] md:text-[45px] lg:text-[55px] font-semibold text-center">Get In Touch With Me</h1>
+      <h1 className="mt-8 text-[32px] md:text-[45px] lg:text-[55px] font-semibold text-center">
+        Get In Touch With <span className="text-[#a934dc]">Me</span>
+      </h1>
       <div className="flex text-center justify-center mt-8 gap-10 mx-20">
         <div className="lg:w-1/2">
           <h3 className="font-semibold text-[24px] md:text-[30px] text-center">I am looking forward to start projects with you</h3>

@@ -1,9 +1,14 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useContext } from "react";
+import { useRouter } from "next/router";
+import { ModalImageContext } from "@hanawidyatari/contexts";
 import { projects } from "@hanawidyatari/utils/projectsList";
 import ProjectCard from "@hanawidyatari/components/cards/ProjectCard";
 import ProjectDetailCard from "@hanawidyatari/components/cards/ProjectDetailCard";
 
 export default function Projects() {
+  const router = useRouter();
+  const modalImageContext = useContext(ModalImageContext);
+  const { setImageModal, setOpenModalImage } = modalImageContext;
   const [indexProject, setIndexProject] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [currentData, setCurrentData] = useState();
@@ -28,11 +33,33 @@ export default function Projects() {
     }, 300);
   };
 
+  const handleOpenDetailPage = (id) => {
+    router.push(`/projects/${id}`);
+  };
+
   const renderProjects = useMemo(() => {
     const current = data[indexProject];
     setCurrentData(current);
-    return <ProjectDetailCard name={current.name} pic={current.pic} desc={current.desc} icons={current.icons} links={current.links} isPotrait={current.isPotrait} link={current.link} intro={current.intro} />;
+
+    return (
+      <ProjectDetailCard
+        name={current.name}
+        pic={current.pic}
+        desc={current.desc}
+        icons={current.icons}
+        links={current.links}
+        isPotrait={current.isPotrait}
+        link={current.link}
+        intro={current.intro}
+        handleOpenDetailPage={() => handleOpenDetailPage(current.id)}
+      />
+    );
   }, [indexProject, data]);
+
+  const handleOpenImageModalPreview = () => {
+    setOpenModalImage(true);
+    setImageModal(currentData?.pic ?? "");
+  };
 
   return (
     <div className={`py-5 lg:py-20 w-full`}>
@@ -50,6 +77,7 @@ export default function Projects() {
           isDataMoreThanOne={isDataMoreThanOne}
           backToPrevious={() => handleChangeSubProject("prev")}
           goToNext={() => handleChangeSubProject("next")}
+          handleOpenImageModalPreview={handleOpenImageModalPreview}
           isFirstData={isCurrentFirstData}
           isLastData={isCurrentLastData}
         />

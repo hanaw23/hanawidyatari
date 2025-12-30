@@ -11,6 +11,8 @@ module.exports = withSass({
       "@hanawidyatari/utils": path.resolve(__dirname, "src/utility"),
       "@hanawidyatari/styles": path.resolve(__dirname, "src/styles"),
       "@hanawidyatari/icons": path.resolve(__dirname, "src/icons"),
+      "@hanawidyatari/hooks": path.resolve(__dirname, "src/hooks"),
+      "@hanawidyatari/contexts": path.resolve(__dirname, "src/contexts"),
     };
     return config;
   },
