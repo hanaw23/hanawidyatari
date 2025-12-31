@@ -2,7 +2,7 @@ import { ParallaxBanner } from "react-scroll-parallax";
 
 export default function HomePage() {
   return (
-    <div className="overflow-x-hidden overflow-y-hidden z-0">
+    <div className="overflow-x-hidden overflow-y-hidden z-0 opacity-0 animate-fadeUp [animation-delay:400ms]">
       <ParallaxBanner
         layers={[
           { image: "assets/images/background.png", speed: -30 },
