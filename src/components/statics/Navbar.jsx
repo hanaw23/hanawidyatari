@@ -95,12 +95,11 @@ const Navbar = () => {
             🤖
           </span>
         </div>
-        <div className="ml-40 flex gap-16">
+        <div className="flex justify-center gap-16">
           {navbar.map((item, i) => {
             const isActive = item.link === activeLink;
-
             return (
-              <ul className="text-sm dark:text-white text-gray-900" key={i}>
+              <ul className="text-sm dark:text-white text-gray-900 text-center" key={i}>
                 <li className={`cursor-pointer hover:text-[#d992f7] ${isActive ? "text-[#d992f7] font-semibold text-base" : ""}`} onClick={() => smoothScroll(item.link)}>
                   {item.name}
                 </li>
