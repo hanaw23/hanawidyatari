@@ -1,14 +1,11 @@
 import { useState, useMemo, useContext } from "react";
 import { useRouter } from "next/router";
-import { ModalImageContext } from "@hanawidyatari/contexts";
 import { projects } from "@hanawidyatari/utils/projectsList";
 import ProjectCard from "@hanawidyatari/components/cards/ProjectCard";
 import ProjectDetailCard from "@hanawidyatari/components/cards/ProjectDetailCard";
 
 export default function Projects() {
   const router = useRouter();
-  const modalImageContext = useContext(ModalImageContext);
-  const { setImageModal, setOpenModalImage } = modalImageContext;
   const [indexProject, setIndexProject] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [currentData, setCurrentData] = useState();
@@ -56,11 +53,6 @@ export default function Projects() {
     );
   }, [indexProject, data]);
 
-  const handleOpenImageModalPreview = () => {
-    setOpenModalImage(true);
-    setImageModal(currentData?.pic ?? "");
-  };
-
   return (
     <div className={`py-5 lg:py-20 w-full`}>
       <div className="x-4 lg:mx-10">
@@ -77,7 +69,6 @@ export default function Projects() {
           isDataMoreThanOne={isDataMoreThanOne}
           backToPrevious={() => handleChangeSubProject("prev")}
           goToNext={() => handleChangeSubProject("next")}
-          handleOpenImageModalPreview={handleOpenImageModalPreview}
           isFirstData={isCurrentFirstData}
           isLastData={isCurrentLastData}
         />

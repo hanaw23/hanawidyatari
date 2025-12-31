@@ -1,7 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import { useRouter } from "next/router";
-import Navbar from "@hanawidyatari/components/statics/Navbar";
-import ScrollProgress from "@hanawidyatari/components/scrolls/ScrollProgress";
+import { useIsMobile } from "@hanawidyatari/hooks";
+import { NavigationContext } from "@hanawidyatari/contexts";
 import HomePage from "@hanawidyatari/pages/home";
 import AboutMePage from "@hanawidyatari/pages/aboutMe";
 import ExperiencePage from "@hanawidyatari/pages/experience";
@@ -10,6 +10,9 @@ import ContactMePage from "@hanawidyatari/pages/contactMe";
 
 export default function Home() {
   const router = useRouter();
+  const isMobileView = useIsMobile();
+  const navigationContext = useContext(NavigationContext);
+  const { setIsMobile } = navigationContext;
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -19,12 +22,12 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    setIsMobile(isMobileView);
+  }, [isMobileView]);
+
   return (
     <>
-      <ScrollProgress />
-      <div className="hidden lg:block">
-        <Navbar />
-      </div>
       <section id="home">
         <HomePage />
       </section>

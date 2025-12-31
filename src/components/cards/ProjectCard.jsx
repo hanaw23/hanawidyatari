@@ -21,7 +21,6 @@ const ProjectCard = (props) => {
           loading="lazy"
           placeholder="blur"
           blurDataURL="/_next/image?url=/placeholder.jpg&w=16&q=1"
-          // onClick={props.handleOpenImageModalPreview}
         />
       </div>
 
