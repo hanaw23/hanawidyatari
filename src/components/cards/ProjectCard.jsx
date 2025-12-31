@@ -29,14 +29,14 @@ const ProjectCard = (props) => {
       <div className="absolute top-4 lg:top-6 right-4 lg:right-6 flex gap-4 items-center z-10">
         {/* Back Button */}
         {isShowBackButton && (
-          <div className="p-3 rounded-full dark:bg-black/50 bg-white/50 hover:bg-white/70 dark:hover:bg-black/70 backdrop-blur-md cursor-pointer shadow-lg" onClick={() => props.backToPrevious()}>
+          <div className="p-2 rounded-full dark:bg-black/50 bg-white/50 hover:bg-white/70 dark:hover:bg-black/70 backdrop-blur-md cursor-pointer shadow-lg" onClick={() => props.backToPrevious()}>
             <BackIcon />
           </div>
         )}
 
         {/* Next Button */}
         {isShowNextButton && (
-          <div className="p-3 rounded-full dark:bg-black/50 bg-white/50 hover:bg-white/70 dark:hover:bg-black/70 backdrop-blur-md cursor-pointer shadow-lg" onClick={() => props.goToNext()}>
+          <div className="p-2 rounded-full dark:bg-black/50 bg-white/50 hover:bg-white/70 dark:hover:bg-black/70 backdrop-blur-md cursor-pointer shadow-lg" onClick={() => props.goToNext()}>
             <NextIcon />
           </div>
         )}
@@ -50,7 +50,7 @@ const ProjectCard = (props) => {
         <div className="absolute bottom-4 left-0 w-full hidden lg:flex justify-center items-center pb-8">
           <div className="flex gap-2">
             {props.data.map((item, i) => {
-              return <div key={i} className={`border border-transparent w-2 h-2 rounded-[100%] ${props.indexProject === i ? "bg-[#a934dc]" : "bg-gray-200"}`} />;
+              return <div key={i} className={`transition-all border border-transparent w-2 h-2 rounded-[100%] ${props.indexProject === i ? "bg-[#a934dc]" : "bg-gray-200"}`} />;
             })}
           </div>
         </div>

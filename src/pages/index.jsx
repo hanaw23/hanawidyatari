@@ -1,12 +1,24 @@
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 import Navbar from "@hanawidyatari/components/statics/Navbar";
 import ScrollProgress from "@hanawidyatari/components/scrolls/ScrollProgress";
 import HomePage from "@hanawidyatari/pages/home";
 import AboutMePage from "@hanawidyatari/pages/aboutMe";
-import ExperiencesPage from "@hanawidyatari/pages/experiences";
+import ExperiencePage from "@hanawidyatari/pages/experience";
 import ProjectsPage from "@hanawidyatari/pages/projects";
 import ContactMePage from "@hanawidyatari/pages/contactMe";
 
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.location.hash = "home";
+    }, 0);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <ScrollProgress />
@@ -19,8 +31,8 @@ export default function Home() {
       <section id="aboutMe">
         <AboutMePage />
       </section>
-      <section id="experiences">
-        <ExperiencesPage />
+      <section id="experience">
+        <ExperiencePage />
       </section>
       <section id="projects">
         <ProjectsPage />

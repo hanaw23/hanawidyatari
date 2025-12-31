@@ -1,3 +1,4 @@
+import React from "react";
 import ExperienceCard from "@hanawidyatari/components/cards/ExperienceCard";
 import { detailExp } from "@hanawidyatari/utils/experiences";
 

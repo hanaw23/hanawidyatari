@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-
 import ThemeToggle from "@hanawidyatari/components/toggles/ThemeToggle";
 import { navbar } from "@hanawidyatari/utils/navbarList";
 
@@ -9,20 +8,53 @@ const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const [isHover, setIsHover] = useState(false);
   const [show, setShow] = useState(true);
-  const [activeLink, setActiveLink] = useState("");
+  const [activeLink, setActiveLink] = useState("#home");
 
-  // This function is to control show and unshow navbar (deprecated)
-  const controlNavbar = () => {
-    if (window.scrollY > 50) {
-      setShow(false);
-    } else {
-      setShow(true);
+  const handleScroll = () => {
+    const sections = navbar?.map((item) => item.link.slice(1));
+    let currentSection = sections[0];
+
+    for (const sectionId of sections) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          currentSection = sectionId;
+          break;
+        }
+      }
+    }
+
+    const newLink = `#${currentSection}`;
+
+    if (activeLink !== newLink) {
+      setActiveLink(newLink);
+      window.history.replaceState(null, "", newLink);
     }
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", controlNavbar);
-    return () => window.addEventListener("scroll", controlNavbar);
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [activeLink, navbar]);
+
+  // Handle initial load with hash in URL
+  useEffect(() => {
+    const hash = window.location.hash || "#home";
+    setActiveLink(hash);
+
+    // Scroll to section if hash exists
+    const element = document.getElementById(hash.slice(1));
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
   }, []);
 
   const smoothScroll = (link) => {

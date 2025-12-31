@@ -19,9 +19,4 @@ export const navbar = [
     name: "Projects",
     link: "#projects",
   },
-  {
-    id: "contactMe",
-    name: "Contact Me",
-    link: "#contactMe",
-  },
 ];

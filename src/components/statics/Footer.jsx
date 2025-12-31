@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="bg-transparent dark:text-gray-50 mt-8 text-center mx-20 pb-2">
+    <div className="bg-transparent dark:text-gray-50 mt-8 text-center mx-20">
       <div className="flex flex-col">
         <hr className="mx-auto dark:border-gray-50 border-gray-900 w-full h-2" />
         <div className="mt-3">
