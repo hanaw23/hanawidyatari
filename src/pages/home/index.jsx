@@ -1,42 +1,23 @@
 import { ParallaxBanner } from "react-scroll-parallax";
-import { motion } from "framer-motion";
 
 export default function HomePage() {
-  // styling motion when enter page
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0 },
-  };
-
   return (
-    <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: "easeOut" }}>
-      <div className="overflow-x-hidden overflow-y-hidden z-0">
-        <ParallaxBanner
-          layers={[
-            { image: "assets/images/background.png", speed: -30 },
-            {
-              speed: -40,
-              children: (
-                <div className="absolute inset-0 flex items-center justify-center -mt-[120%] md:-mt-[80%] lg:-mt-[30%]">
-                  <h1 className="text-center text-6xl lg:text-8xl text-gray-200 font-thin mx-8">Explore My Works</h1>
-                </div>
-              ),
-            },
-            { image: "assets/images/objectnowindow.png", speed: -15 },
-          ]}
-          className="aspect-[3/4] lg:aspect-[2/1]"
-        />
-      </div>
-    </motion.div>
+    <div className="overflow-x-hidden overflow-y-hidden z-0">
+      <ParallaxBanner
+        layers={[
+          { image: "assets/images/background.png", speed: -30 },
+          {
+            speed: -40,
+            children: (
+              <div className="absolute inset-0 flex items-center justify-center -mt-[120%] md:-mt-[80%] lg:-mt-[30%]">
+                <h1 className="text-center text-6xl lg:text-8xl text-gray-200 font-thin mx-8">Explore My Works</h1>
+              </div>
+            ),
+          },
+          { image: "assets/images/objectnowindow.png", speed: -15 },
+        ]}
+        className="aspect-[3/4] lg:aspect-[2/1]"
+      />
+    </div>
   );
 }
