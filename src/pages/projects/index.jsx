@@ -1,11 +1,9 @@
 import { useState, useMemo, useContext } from "react";
-import { useRouter } from "next/router";
 import { projects } from "@hanawidyatari/utils/projectsList";
 import ProjectCard from "@hanawidyatari/components/cards/ProjectCard";
 import ProjectDetailCard from "@hanawidyatari/components/cards/ProjectDetailCard";
 
 export default function Projects() {
-  const router = useRouter();
   const [indexProject, setIndexProject] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [currentData, setCurrentData] = useState();
@@ -31,10 +29,7 @@ export default function Projects() {
   };
 
   const handleOpenDetailPage = (id) => {
-    router.push({
-      pathname: `/projects/${id}`,
-      hash: "",
-    });
+    window.location.href = `/projects/${id}`;
   };
 
   const renderProjects = useMemo(() => {

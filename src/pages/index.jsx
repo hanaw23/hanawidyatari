@@ -30,7 +30,6 @@ export default function Home() {
     const el = document.getElementById(id);
     if (!el) return;
 
-    // delay kecil untuk pastikan DOM sudah siap
     setTimeout(() => {
       el.scrollIntoView({ behavior: "smooth" });
     }, 100);

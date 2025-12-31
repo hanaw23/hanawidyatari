@@ -99,11 +99,11 @@ const Navbar = (props) => {
             </span>
           </div>
         ) : (
-          <div className="flex hover:text-[#d992f7] cursor-pointer font-semibold mx-3 lg:mx-12" onClick={props.handleGoBack}>
+          <div className="flex dark:text-white text-gray-900 hover:text-[#d992f7] cursor-pointer font-semibold mx-3 lg:mx-12" onClick={props.handleGoBack}>
             <span className="mt-1.5 lg:mt-0 ml-3">
               <BackIcon />
             </span>
-            Home
+            Back
           </div>
         )}
 
