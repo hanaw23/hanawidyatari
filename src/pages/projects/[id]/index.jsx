@@ -2,12 +2,14 @@ import { useMemo, useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import { useIsMobile } from "@hanawidyatari/hooks";
 import { projects } from "@hanawidyatari/utils/projectsList";
 import BackIcon from "@hanawidyatari/icons/BackIcon";
 import NextIcon from "@hanawidyatari/icons/NextIcon";
 import { customColorFirstWord } from "@hanawidyatari/utils/utils";
 
 export default function ProjectDetailPage() {
+  const isMobile = useIsMobile();
   const scrollContainerRef = useRef(null);
   const router = useRouter();
   const { id } = router.query;
@@ -52,6 +54,15 @@ export default function ProjectDetailPage() {
     show: { opacity: 1, y: 0 },
   };
 
+  const handleWidthHero = (isPotrait) => {
+    const isPotraitPic = isPotrait ? "320px" : "1200px";
+    const isPotraitPicMobile = isPotrait ? "215px" : "550px";
+    if (isMobile) {
+      return isPotraitPicMobile;
+    }
+    return isPotraitPic;
+  };
+
   return (
     <motion.main variants={container} initial="hidden" animate="show">
       <div className="flex flex-col w-full h-full py-2">
@@ -82,11 +93,11 @@ export default function ProjectDetailPage() {
                       key={i}
                       className="flex-shrink-0 relative group"
                       style={{
-                        width: el?.isPotrait ? "320px" : "1200px",
+                        width: handleWidthHero(el?.isPotrait),
                       }}
                     >
-                      <div className="relative h-[650px] overflow-hidden rounded-3xl shadow-2xl transition-transform duration-300 ">
-                        <Image src={el?.url} alt={`Hero image ${i + 1}`} fill height={650} width={el?.isPotrait ? "320px" : "1200px"} className="object-cover select-none" priority />
+                      <div className="relative h-[460px] lg:h-[650px] overflow-hidden rounded-3xl shadow-2xl transition-transform duration-300 ">
+                        <Image src={el?.url} alt={`Hero image ${i + 1}`} fill height={650} width={handleWidthHero(el?.isPotrait)} className="object-cover select-none" priority />
                       </div>
                     </div>
                   ))}
@@ -112,7 +123,7 @@ export default function ProjectDetailPage() {
           </motion.section>
 
           {/* Content */}
-          <div className="mb-6">
+          <div className="mb-6 -mt-6 lg:-mt-4">
             <div className="mx-6 lg:mx-20">
               <h1 className="text-xl lg:text-2xl font-semibold mb-6 dark:text-white">Detail Project</h1>
               <p className="text-sm lg:text-lg text-justify">{data?.desc}</p>
@@ -126,7 +137,7 @@ export default function ProjectDetailPage() {
                     <p className="font-semibold underline text-[#a934dc] text-base lg:text-lg hover:opacity-70 transition">Link to project</p>
                   </a>
                 ) : (
-                  <div className="flex flex-wrap gap-4 lg:gap-8">
+                  <div className="flex gap-4">
                     {data?.links?.map((item, i) => (
                       <a href={item.link} target="_blank" className="cursor-pointer hover:opacity-70 transition" key={i}>
                         <div>{item?.iconHtml}</div>

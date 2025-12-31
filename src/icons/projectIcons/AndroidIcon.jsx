@@ -23,8 +23,7 @@ export default function AndoridIcon(props) {
       }
       detail="Play Store"
       onHover={isHover}
-      classNameDiv="flex flex-col w-[25px] h-[25px] lg:w-[35px] lg:h-[35px]"
-      classNameDetail="w-fit -mt-5"
+      classNameDiv="flex flex-col w-[35px] h-[35px] lg:w-[45px] lg:h-[45px]"
     />
   );
 }

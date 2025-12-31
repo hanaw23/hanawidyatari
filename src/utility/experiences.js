@@ -69,6 +69,7 @@ export const detailExp = [
         iconHtml: <GitIcon height={20} width={20} className="cursor-pointer" />,
       },
     ],
+    website: "https://broom.id/",
   },
   {
     id: 1,
@@ -116,6 +117,7 @@ export const detailExp = [
         iconHtml: <GitIcon height={20} width={20} className="cursor-pointer" />,
       },
     ],
+    website: "https://mazecare.com/",
   },
   {
     id: 2,
@@ -168,6 +170,7 @@ export const detailExp = [
         iconHtml: <BitbucketIcon height={20} width={20} className="cursor-pointer" />,
       },
     ],
+    website: "https://radyalabs.com/id",
   },
   {
     id: 3,
