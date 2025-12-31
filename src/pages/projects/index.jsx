@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useContext } from "react";
 import { projects } from "@hanawidyatari/utils/projectsList";
 import ProjectCard from "@hanawidyatari/components/cards/ProjectCard";
 import ProjectDetailCard from "@hanawidyatari/components/cards/ProjectDetailCard";
@@ -6,6 +6,7 @@ import ProjectDetailCard from "@hanawidyatari/components/cards/ProjectDetailCard
 export default function Projects() {
   const [indexProject, setIndexProject] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [currentData, setCurrentData] = useState();
 
   const data = projects;
   const isDataMoreThanOne = data.length > 1;
@@ -27,8 +28,14 @@ export default function Projects() {
     }, 300);
   };
 
+  const handleOpenDetailPage = (id) => {
+    window.location.href = `/projects/${id}`;
+  };
+
   const renderProjects = useMemo(() => {
     const current = data[indexProject];
+    setCurrentData(current);
+
     return (
       <ProjectDetailCard
         name={current.name}
@@ -38,11 +45,8 @@ export default function Projects() {
         links={current.links}
         isPotrait={current.isPotrait}
         link={current.link}
-        isDataMoreThanOne={isDataMoreThanOne}
-        backToPrevious={() => handleChangeSubProject("prev")}
-        goToNext={() => handleChangeSubProject("next")}
-        isFirstData={isCurrentFirstData}
-        isLastData={isCurrentLastData}
+        intro={current.intro}
+        handleOpenDetailPage={() => handleOpenDetailPage(current.id)}
       />
     );
   }, [indexProject, data]);
@@ -50,9 +54,22 @@ export default function Projects() {
   return (
     <div className={`py-5 lg:py-20 w-full`}>
       <div className="x-4 lg:mx-10">
-        <h1 className="mt-10 lg:mt-14 text-[40px] font-semibold text-center mb-8 lg:mb-14">Projects</h1>
-
-        <ProjectCard projects={projects} isTransitioning={isTransitioning} renderProjects={renderProjects} indexProject={indexProject} data={data} isDataMoreThanOne={isDataMoreThanOne} />
+        <h1 className="mt-10 lg:mt-14 text-[40px] lg:text-[55px] font-semibold text-center mb-8 lg:mb-14">
+          Featured <span className="text-[#a934dc]">Projects</span>
+        </h1>
+        <ProjectCard
+          projects={projects}
+          isTransitioning={isTransitioning}
+          renderProjects={renderProjects}
+          indexProject={indexProject}
+          data={data}
+          currentData={currentData}
+          isDataMoreThanOne={isDataMoreThanOne}
+          backToPrevious={() => handleChangeSubProject("prev")}
+          goToNext={() => handleChangeSubProject("next")}
+          isFirstData={isCurrentFirstData}
+          isLastData={isCurrentLastData}
+        />
       </div>
     </div>
   );

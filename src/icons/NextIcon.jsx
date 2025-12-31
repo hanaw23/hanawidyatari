@@ -20,7 +20,7 @@ export default function NextIcon(props) {
       }
       detail="Next Page"
       onHover={isHover}
-      classNameDiv="flex flex-col w-[25px] h-[25px] lg:w-[35px] lg:h-[35px]"
+      classNameDiv="flex flex-col w-[15px] h-[15px] lg:w-[25px] lg:h-[25px]"
       classNameDetail="w-fit -mt-5"
     />
   );

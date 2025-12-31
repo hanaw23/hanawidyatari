@@ -2,7 +2,9 @@ export default function AboutMePage() {
   return (
     <div className="w-full pt-5 lg:py-20">
       <div className="flex justify-center">
-        <h1 className="mt-10 text-[40px] font-semibold">About Me</h1>
+        <h1 className="mt-10 text-[40px] lg:text-[55px] font-semibold">
+          About <span className="text-[#a934dc]">Me</span>
+        </h1>
       </div>
       <div className="flex flex-1 flex-col justify-center text-center lg:text-justify pb-20 px-10 lg:px-[20%]">
         <h3 className="text-[20px] py-3">Hello, I'm Hana Widyatari 👋</h3>
