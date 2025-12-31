@@ -4,3 +4,8 @@ export const customColorFirstWord = (words, color) =>
       {word}{" "}
     </span>
   ));
+
+export const getParentPathNamePage = (pathName) => {
+  const parentPathName = pathName.split("/")[1];
+  return parentPathName;
+};

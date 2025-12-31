@@ -31,7 +31,10 @@ export default function Projects() {
   };
 
   const handleOpenDetailPage = (id) => {
-    router.push(`/projects/${id}`);
+    router.push({
+      pathname: `/projects/${id}`,
+      hash: "",
+    });
   };
 
   const renderProjects = useMemo(() => {

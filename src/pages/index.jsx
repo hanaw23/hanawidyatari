@@ -23,6 +23,20 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    if (!router.asPath.includes("#")) return;
+
+    const id = router.asPath.split("#")[1];
+
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    // delay kecil untuk pastikan DOM sudah siap
+    setTimeout(() => {
+      el.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  }, [router.asPath]);
+
+  useEffect(() => {
     setIsMobile(isMobileView);
   }, [isMobileView]);
 

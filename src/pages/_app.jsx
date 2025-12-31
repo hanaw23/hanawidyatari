@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
 
       window.history.replaceState(null, "", cleanUrl);
     }
-  }, [router]);
+  }, [router.asPath]);
 
   return (
     <ThemeProvider enableSystem={true} attribute="class">
