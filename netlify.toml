@@ -4,11 +4,7 @@
 
 [build.environment]
   NODE_VERSION = "18.17.0"
-  npm_config_sharp_binary_host = "https://github.com/lovell/sharp-libvips/releases/download"
-  npm_config_sharp_libvips_binary_host = "https://github.com/lovell/sharp-libvips/releases/download"
+  LD_LIBRARY_PATH = "/opt/buildhome/.apt/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-
-[functions]
-  node_bundler = "esbuild"
