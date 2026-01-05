@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { useFindSection } from "@hanawidyatari/hooks";
 
 export default function AboutMePage() {
