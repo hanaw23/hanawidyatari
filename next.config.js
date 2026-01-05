@@ -3,6 +3,7 @@ const withSass = require("@zeit/next-sass");
 
 module.exports = withSass({
   cssModules: true,
+  reactStrictMode: true,
   images: {
     unoptimized: true,
     loader: "custom",
