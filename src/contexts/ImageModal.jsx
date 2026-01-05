@@ -1,7 +1,6 @@
 "use client";
 
 import { createContext, useState } from "react";
-import Image from "next/image";
 
 export const ModalImageContext = createContext({});
 
@@ -22,7 +21,7 @@ export const ModalImageProvider = ({ children }) => {
         <div className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/60 backdrop-blur-md" onClick={handleCloseModal}>
           <div className=" w-[90vw] h-[90vh] sm:w-[85vw] sm:h-[85vh] lg:w-[80vw] lg:h-[80vh] flex items-center justify-center">
             <div className=" w-full h-full" onClick={(e) => e.stopPropagation()}>
-              <Image
+              <img
                 src={imageModal}
                 width={1920}
                 height={1080}
