@@ -3,6 +3,9 @@ const withSass = require("@zeit/next-sass");
 
 module.exports = withSass({
   cssModules: true,
+  images: {
+    unoptimized: true,
+  },
   webpack(config) {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
