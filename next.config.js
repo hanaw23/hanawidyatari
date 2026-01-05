@@ -3,10 +3,6 @@ const withSass = require("@zeit/next-sass");
 
 module.exports = withSass({
   cssModules: true,
-  reactStrictMode: true,
-  images: {
-    unoptimized: true,
-  },
   webpack(config) {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
@@ -31,7 +27,13 @@ module.exports = {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
+  swcMinify: false,
+  images: {
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    formats: ["image/webp"],
+    minimumCacheTTL: 60,
+  },
 };
 
 module.exports = nextConfig;
