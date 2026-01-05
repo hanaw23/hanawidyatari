@@ -1,9 +1,10 @@
+
 [build]
-  command = "yarn add sharp --platform=linux --arch=x64 --ignore-scripts && yarn build"
+  command = "yarn add sharp@0.32.6 --ignore-scripts && yarn build"
   publish = ".next"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "18.17.0"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
