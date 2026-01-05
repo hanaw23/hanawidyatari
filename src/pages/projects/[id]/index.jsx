@@ -1,5 +1,4 @@
 import { useMemo, useState, useEffect, useRef } from "react";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { useIsMobile } from "@hanawidyatari/hooks";
 import { projects } from "@hanawidyatari/utils/projectsList";
@@ -39,7 +38,7 @@ export default function ProjectDetailPage() {
 
   const handleWidthHero = (isPotrait) => {
     const isPotraitPic = isPotrait ? "320px" : "1200px";
-    const isPotraitPicMobile = isPotrait ? "215px" : "550px";
+    const isPotraitPicMobile = isPotrait ? "215px" : "690px";
     if (isMobile) {
       return isPotraitPicMobile;
     }
@@ -76,8 +75,8 @@ export default function ProjectDetailPage() {
                       width: handleWidthHero(el?.isPotrait),
                     }}
                   >
-                    <div className="relative h-[460px] lg:h-[650px] overflow-hidden rounded-3xl shadow-2xl transition-transform duration-300 ">
-                      <Image src={el?.url} alt={`Hero image ${i + 1}`} fill height={650} width={handleWidthHero(el?.isPotrait)} className="object-cover select-none" priority />
+                    <div className="relative h-[460px] lg:h-[650px] overflow-hidden rounded-3xl shadow-2xl transition-transform duration-300">
+                      <img src={el?.url} alt={`Hero image ${i + 1}`} className="absolute inset-0 w-full h-full object-cover select-none" />
                     </div>
                   </div>
                 ))}
