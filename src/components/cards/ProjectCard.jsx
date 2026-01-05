@@ -1,21 +1,32 @@
+import { useState } from "react";
 import { useIsMobile } from "@hanawidyatari/hooks";
 import BackIcon from "@hanawidyatari/icons/BackIcon";
 import NextIcon from "@hanawidyatari/icons/NextIcon";
+import LoadingSpinner from "@hanawidyatari/components/statics/LoadingSpinner";
 
 const ProjectCard = (props) => {
   const isMobile = useIsMobile();
   const isShowBackButton = props.isDataMoreThanOne && !props.isFirstData;
   const isShowNextButton = props.isDataMoreThanOne && !props.isLastData;
+  const [loadImage, setLoadImage] = useState(false);
 
   return (
     <div className="relative border border-transparent backdrop-blur-xl bg-black/10 dark:bg-white/10 rounded-[50px] h-[450px] lg:h-[700px] shadow-xl shadow-black/30 mx-4 lg:mx-2 overflow-hidden">
       {/* Project Picture */}
       <div className="w-full overflow-hidden rounded-t-[50px]">
-        <img
-          src={props.currentData.pic}
-          className={`${isMobile ? "h-[150px]" : "h-[425px]"} w-full transition-all object-cover duration-700 transform ${props.isTransitioning ? "opacity-0 translate-x-4" : "opacity-100 translate-x-0"}`}
-          alt="Picture of project"
-        />
+        {!setLoadImage ? (
+          <div className={`${isMobile ? "h-[150px]" : "h-[425px]"} w-full transition-all object-cover duration-700 transform ${props.isTransitioning ? "opacity-0 translate-x-4" : "opacity-100 translate-x-0"}`}>
+            <LoadingSpinner className="justify-center items-center py-[75px] lg:py-[200px]" />
+          </div>
+        ) : (
+          <img
+            src={props.currentData.pic}
+            className={`${isMobile ? "h-[150px]" : "h-[425px]"} w-full transition-all object-cover duration-700 transform ${props.isTransitioning ? "opacity-0 translate-x-4" : "opacity-100 translate-x-0"}`}
+            alt="Picture of project"
+            loading="lazy"
+            load={() => setLoadImage(true)}
+          />
+        )}
       </div>
 
       {/* Navigation Buttons - Positioned over the image */}
