@@ -5,6 +5,8 @@ module.exports = withSass({
   cssModules: true,
   images: {
     unoptimized: true,
+    loader: "custom",
+    loaderFile: "./imageLoader.js",
   },
   webpack(config) {
     config.resolve.alias = {
