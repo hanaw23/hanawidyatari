@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { useIsMobile } from "@hanawidyatari/hooks";
 
-export const useFindSection = (sectionId, offset = 210) => {
+export const useFindSection = (sectionId, offset = 80) => {
   const router = useRouter();
+  const isMobileView = useIsMobile();
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
@@ -18,7 +20,7 @@ export const useFindSection = (sectionId, offset = 210) => {
 
       const hashMatch = window.location.hash === `#${sectionId}`;
 
-      setIsActive(inView && hashMatch);
+      isMobileView ? setIsActive(inView) : setIsActive(inView && hashMatch);
     };
 
     handleScroll();
@@ -30,7 +32,7 @@ export const useFindSection = (sectionId, offset = 210) => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("hashchange", handleScroll);
     };
-  }, [sectionId, offset]);
+  }, [sectionId, offset, isMobileView]);
 
   return isActive;
 };
