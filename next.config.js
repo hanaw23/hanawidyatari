@@ -6,8 +6,6 @@ module.exports = withSass({
   reactStrictMode: true,
   images: {
     unoptimized: true,
-    loader: "custom",
-    loaderFile: "./imageLoader.js",
   },
   webpack(config) {
     config.resolve.alias = {
