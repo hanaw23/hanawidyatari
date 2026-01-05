@@ -4,7 +4,6 @@
 
 [build.environment]
   NODE_VERSION = "18.17.0"
-  LD_LIBRARY_PATH = "/opt/buildhome/.apt/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
