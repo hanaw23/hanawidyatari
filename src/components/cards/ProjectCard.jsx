@@ -11,7 +11,7 @@ const ProjectCard = (props) => {
   const [loadImage, setLoadImage] = useState(false);
 
   return (
-    <div className="relative border border-transparent backdrop-blur-xl bg-black/10 dark:bg-white/10 rounded-[50px] h-[450px] lg:h-[700px] shadow-xl shadow-black/30 mx-4 lg:mx-2 overflow-hidden">
+    <div className="relative border border-transparent backdrop-blur-xl bg-black/10 dark:bg-white/10 rounded-[50px] h-[500px] lg:h-[770px] shadow-xl shadow-black/30 mx-4 lg:mx-2 overflow-hidden">
       {/* Project Picture */}
       <div className="w-full overflow-hidden rounded-t-[50px]">
         {!setLoadImage ? (
@@ -24,20 +24,23 @@ const ProjectCard = (props) => {
             className={`${isMobile ? "h-[150px]" : "h-[425px]"} w-full transition-all object-cover duration-700 transform ${props.isTransitioning ? "opacity-0 translate-x-4" : "opacity-100 translate-x-0"}`}
             alt="Picture of project"
             loading="lazy"
-            load={() => setLoadImage(true)}
+            load={() =>
+              setTimeout(() => {
+                setLoadImage(true);
+              }, 3500)
+            }
           />
         )}
       </div>
 
-      {/* Navigation Buttons - Positioned over the image */}
-      <div className="absolute top-4 lg:top-6 right-4 lg:right-6 flex gap-4 items-center z-10">
+      {/* Navigation Buttons */}
+      <div className="mt-6 flex gap-4 items-center justify-end mr-10">
         {/* Back Button */}
         {isShowBackButton && (
           <div className="p-2 rounded-full dark:bg-black/50 bg-white/50 hover:bg-white/70 dark:hover:bg-black/70 backdrop-blur-md cursor-pointer shadow-lg" onClick={() => props.backToPrevious()}>
             <BackIcon />
           </div>
         )}
-
         {/* Next Button */}
         {isShowNextButton && (
           <div className="p-2 rounded-full dark:bg-black/50 bg-white/50 hover:bg-white/70 dark:hover:bg-black/70 backdrop-blur-md cursor-pointer shadow-lg" onClick={() => props.goToNext()}>

@@ -6,7 +6,7 @@ export default function AboutMePage() {
 
   return (
     <div className="w-full pt-5 lg:py-20 h-[80vh]">
-      <div className={`${isCurrentSection ? "opacity-0 animate-fadeIn [animation-delay:200ms]" : "animate-fadeOut [animation-delay:300ms]"}`}>
+      <div className={`${isCurrentSection ? "opacity-0 animate-fadeIn [animation-delay:100ms]" : "animate-fadeOut [animation-delay:300ms]"}`}>
         <div className="flex justify-center">
           <h1 className="mt-10 text-[40px] lg:text-[55px] font-semibold">
             About <span className="text-[#a934dc]">Me</span>
@@ -17,18 +17,17 @@ export default function AboutMePage() {
           <hr className="dark:border-gray-50 border-gray-900" />
 
           <p className="mt-2 lg:px-5  text-justify">
-            I’m a Frontend Developer with 2+ years of experience building web and mobile apps that are simple, intuitive, and enjoyable to use. I started my journey through a coding bootcamp and have worked on both team-based and solo
-            projects along the way. I mainly work with React, Vue, and React Native, and I enjoy turning ideas into real, usable products. Always curious, always learning, and excited to take on new challenges in fast-moving environments.
+            I'm a Frontend Developer with 2+ years of experience building web and mobile applications across industries including fintech and digital healthcare. I mainly work with React, Vue, and React Native, and I enjoy turning ideas
+            into real, usable products. I grow best when I'm learning something new, working closely with a team, and building things that actually matter.
           </p>
 
-          <div className="mt-6">
-            <h3 className="mb-6 text-lg font-bold">Kindly check my resume for more details</h3>
+          <div className="mt-6 flex justify-center">
             <a
               href={"assets/documents/HanaWidyatari-resume.pdf"}
               target="_blank"
-              className="w-full border rounded-[50px]  px-10 py-3 font-semibold border-[#a934dc] text-[#a934dc] hover:bg-[#a934dc] hover:text-white dark:text-white dark:hover:bg-transparent dark:hover:border-[#a934dc] dark:hover:text-[#a934dc] dark:bg-[#a934dc]"
+              className="border rounded-[50px] px-10 py-3 font-semibold border-[#a934dc] text-[#a934dc] hover:bg-[#a934dc] hover:text-white dark:text-white dark:hover:bg-transparent dark:hover:border-[#a934dc] dark:hover:text-[#a934dc] dark:bg-[#a934dc]"
             >
-              Click Me
+              Download My CV
             </a>
           </div>
         </div>
